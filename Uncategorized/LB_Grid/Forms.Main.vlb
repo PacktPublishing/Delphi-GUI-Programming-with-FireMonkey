@@ -1,0 +1,17 @@
+﻿[EmployeeData]
+Coordinates=40,50,85,33
+Visible=False
+
+[StringGrid1]
+Coordinates=240,80,70,141
+
+[]
+Coordinates=149,1,40,51
+
+[BindingsList1]
+Coordinates=16,62,82,33
+
+[EmployeeBindSource]
+Coordinates=10,10,120,213
+Visible=True
+

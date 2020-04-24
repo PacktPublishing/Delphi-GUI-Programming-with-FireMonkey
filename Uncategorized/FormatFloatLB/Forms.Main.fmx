@@ -1,0 +1,91 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 352
+  ClientWidth = 496
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object ListView1: TListView
+    ItemAppearanceClassName = 'TDynamicAppearance'
+    ItemEditAppearanceClassName = 'TDynamicAppearance'
+    HeaderAppearanceClassName = 'TListHeaderObjects'
+    FooterAppearanceClassName = 'TListHeaderObjects'
+    ItemIndex = 0
+    Align = Client
+    Size.Width = 496.000000000000000000
+    Size.Height = 352.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    ItemAppearanceObjects.ItemObjects.ObjectsCollection = <
+      item
+        AppearanceObjectName = 'Text1'
+        AppearanceClassName = 'TTextObjectAppearance'
+        Appearance.Width = 300.000000000000000000
+        Appearance.Height = 10.000000000000000000
+      end
+      item
+        AppearanceObjectName = 'Text2'
+        AppearanceClassName = 'TTextObjectAppearance'
+        Appearance.Width = 100.000000000000000000
+        Appearance.PlaceOffset.X = 100.000000000000000000
+      end
+      item
+        AppearanceObjectName = 'Text3'
+        AppearanceClassName = 'TTextObjectAppearance'
+        Appearance.Width = 100.000000000000000000
+        Appearance.PlaceOffset.X = 200.000000000000000000
+      end>
+    ItemAppearanceObjects.ItemEditObjects.ObjectsCollection = <
+      item
+        AppearanceObjectName = 'Text1'
+        AppearanceClassName = 'TTextObjectAppearance'
+      end>
+  end
+  object PrototypeBindSource1: TPrototypeBindSource
+    AutoActivate = True
+    AutoPost = False
+    RecordCount = 100
+    FieldDefs = <
+      item
+        Name = 'FloatField1'
+        FieldType = ftSingle
+        Generator = 'Floats'
+        ReadOnly = False
+      end>
+    ScopeMappings = <>
+    Left = 376
+    Top = 80
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 372
+    Top = 29
+    object LinkListControlToField2: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = PrototypeBindSource1
+      Control = ListView1
+      FillExpressions = <
+        item
+          SourceMemberName = 'FloatField1'
+          ControlMemberName = 'Text1'
+          CustomFormat = 'Self.Owner.Owner.Owner.ClassName()'
+        end
+        item
+          SourceMemberName = 'FloatField1'
+          ControlMemberName = 'Text2'
+          CustomFormat = 'FormatFloat('#39'"EN "#,#0.0000'#39', Value, '#39'en'#39')'
+        end
+        item
+          SourceMemberName = 'FloatField1'
+          ControlMemberName = 'Text3'
+          CustomFormat = 'FormatFloat('#39'#,#0.00;"("#,#0.00")";"ZERO"'#39', Value-75)'
+        end>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+  end
+end

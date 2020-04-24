@@ -1,0 +1,15 @@
+﻿[OverlayImage]
+Coordinates=10,10,81,51
+
+[OrdersImage]
+Coordinates=101,10,77,51
+
+[ToolBar1]
+Coordinates=95,71,58,33
+
+[IconsLayout]
+Coordinates=10,71,75,33
+
+[TitleLabel]
+Coordinates=188,10,46,51
+

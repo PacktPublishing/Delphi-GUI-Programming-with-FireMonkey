@@ -1,0 +1,140 @@
+object OrderDetailsFrame: TOrderDetailsFrame
+  Align = Client
+  Size.Width = 294.000000000000000000
+  Size.Height = 347.000000000000000000
+  Size.PlatformDefault = False
+  object ToolBar1: TToolBar
+    Size.Width = 294.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object TitleLabel: TLabel
+      Align = Contents
+      AutoSize = True
+      Size.Width = 294.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.HorzAlign = Center
+      TextSettings.WordWrap = False
+      Text = 'Order 1003'
+      TabOrder = 0
+    end
+    object BackButton: TButton
+      Align = Left
+      Margins.Left = 3.000000000000000000
+      Position.X = 3.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'backtoolbutton'
+      TabOrder = 1
+      OnClick = BackButtonClick
+    end
+  end
+  object ListBox1: TListBox
+    Align = Client
+    Size.Width = 294.000000000000000000
+    Size.Height = 307.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 294.000000000000000000
+    Viewport.Height = 307.000000000000000000
+    object ListBoxItem1: TListBoxItem
+      TabOrder = 0
+      Text = 'Sale date'
+      object SaleDateLabel: TLabel
+        Align = Right
+        Position.X = -135.000000000000000000
+        Size.Width = 154.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        Text = '12/04/1988'
+        TabOrder = 0
+      end
+    end
+    object ListBoxItem2: TListBoxItem
+      Position.Y = 19.000000000000000000
+      TabOrder = 1
+      Text = 'Ship date'
+      object ShipDateLabel: TLabel
+        Align = Right
+        Position.X = -135.000000000000000000
+        Size.Width = 154.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        Text = '03/05/1988'
+        TabOrder = 0
+      end
+    end
+    object ListBoxItem3: TListBoxItem
+      Position.Y = 38.000000000000000000
+      TabOrder = 2
+      Text = 'Customer'
+      object CustomerCompanyLabel: TLabel
+        Align = Right
+        Position.X = -135.000000000000000000
+        Size.Width = 154.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Sight Diver'
+        TabOrder = 0
+      end
+    end
+  end
+  object OrderBSDB: TBindSourceDB
+    DataSet = OrdersData.OrdersTable
+    ScopeMappings = <>
+    Left = 88
+    Top = 160
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 132
+    Top = 109
+    object LinkPropertyToFieldText: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = OrderBSDB
+      FieldName = 'OrderNo'
+      Component = TitleLabel
+      CustomFormat = #39'Order '#39' + %s'
+      ComponentProperty = 'Text'
+    end
+    object LinkPropertyToFieldText2: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = OrderBSDB
+      FieldName = 'CustNo'
+      Component = CustomerCompanyLabel
+      ComponentProperty = 'Text'
+      LookupDataSource = CustomerBSDB
+      LookupKeyFieldName = 'CustNo'
+      LookupValueFieldName = 'Company'
+    end
+    object LinkPropertyToFieldText3: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = OrderBSDB
+      FieldName = 'ShipDate'
+      Component = ShipDateLabel
+      CustomFormat = 'FormatDateTime('#39'dd/mm/yyyy'#39', Value)'
+      ComponentProperty = 'Text'
+    end
+    object LinkPropertyToFieldText4: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = OrderBSDB
+      FieldName = 'SaleDate'
+      Component = SaleDateLabel
+      CustomFormat = 'FormatDateTime('#39'dd/mm/yyyy'#39', Value)'
+      ComponentProperty = 'Text'
+    end
+  end
+  object CustomerBSDB: TBindSourceDB
+    DataSet = OrdersData.CustomersTable
+    ScopeMappings = <>
+    Left = 152
+    Top = 184
+  end
+end

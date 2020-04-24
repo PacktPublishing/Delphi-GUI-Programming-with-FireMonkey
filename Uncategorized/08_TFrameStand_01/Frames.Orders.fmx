@@ -1,0 +1,75 @@
+object OrdersFrame: TOrdersFrame
+  Align = Client
+  Size.Width = 266.000000000000000000
+  Size.Height = 300.000000000000000000
+  Size.PlatformDefault = False
+  object OrdersListView: TListView
+    ItemAppearanceClassName = 'TListItemRightDetailAppearance'
+    ItemEditAppearanceClassName = 'TListItemRightDetailDeleteAppearance'
+    HeaderAppearanceClassName = 'TListHeaderObjects'
+    FooterAppearanceClassName = 'TListHeaderObjects'
+    ItemIndex = 0
+    Align = Client
+    Size.Width = 266.000000000000000000
+    Size.Height = 260.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    ItemAppearanceObjects.ItemObjects.Accessory.AccessoryType = Detail
+    OnItemClick = OrdersListViewItemClick
+  end
+  object ToolBar1: TToolBar
+    Size.Width = 266.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    object TitleLabel: TLabel
+      Align = Contents
+      AutoSize = True
+      Size.Width = 266.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.HorzAlign = Center
+      TextSettings.WordWrap = False
+      Text = 'Orders'
+      TabOrder = 0
+    end
+    object BackButton: TButton
+      Align = Left
+      Margins.Left = 3.000000000000000000
+      Position.X = 3.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'backtoolbutton'
+      TabOrder = 1
+      OnClick = BackButtonClick
+    end
+  end
+  object OrdersBSDB: TBindSourceDB
+    DataSet = OrdersData.OrdersTable
+    ScopeMappings = <>
+    Left = 120
+    Top = 136
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 116
+    Top = 85
+    object LinkListControlToField1: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = OrdersBSDB
+      FieldName = 'OrderNo'
+      Control = OrdersListView
+      CustomFormat = #39'Order '#39' + %s'
+      FillExpressions = <
+        item
+          SourceMemberName = 'ItemsTotal'
+          ControlMemberName = 'Detail'
+          CustomFormat = 'Format('#39'%%.0m'#39', Self.AsFloat+0)'
+        end>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+  end
+end
