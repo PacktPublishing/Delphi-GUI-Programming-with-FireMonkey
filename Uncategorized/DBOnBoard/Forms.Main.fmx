@@ -1,0 +1,269 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 450
+  ClientWidth = 699
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object EmpWithOrdersListView: TListView
+    ItemAppearanceClassName = 'TListItemRightDetailAppearance'
+    ItemEditAppearanceClassName = 'TListItemRightDetailDeleteAppearance'
+    HeaderAppearanceClassName = 'TListHeaderObjects'
+    FooterAppearanceClassName = 'TListHeaderObjects'
+    ItemIndex = 1
+    Align = MostRight
+    Position.X = 544.000000000000000000
+    Size.Width = 155.000000000000000000
+    Size.Height = 450.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 8
+    ItemAppearanceObjects.ItemObjects.Accessory.Visible = False
+  end
+  object OrdersGrid: TGrid
+    Align = Bottom
+    CanFocus = True
+    ClipChildren = True
+    Margins.Left = 5.000000000000000000
+    Margins.Right = 5.000000000000000000
+    Margins.Bottom = 5.000000000000000000
+    Position.X = 174.000000000000000000
+    Position.Y = 205.000000000000000000
+    Size.Width = 365.000000000000000000
+    Size.Height = 240.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 17
+    RowCount = 4
+    Viewport.Width = 361.000000000000000000
+    Viewport.Height = 215.000000000000000000
+  end
+  object EmployeesListView: TListView
+    ItemAppearanceClassName = 'TListItemRightDetailAppearance'
+    ItemEditAppearanceClassName = 'TListItemRightDetailDeleteAppearance'
+    HeaderAppearanceClassName = 'TListHeaderObjects'
+    FooterAppearanceClassName = 'TListHeaderObjects'
+    ItemIndex = 15
+    ScrollViewPos = 488.000000000000000000
+    Align = MostLeft
+    Size.Width = 169.000000000000000000
+    Size.Height = 450.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 19
+    ItemAppearanceObjects.ItemObjects.Accessory.Visible = False
+  end
+  object DataConnection: TFDConnection
+    Params.Strings = (
+      'ConnectionDef=MAIN_DBx')
+    Connected = True
+    LoginPrompt = False
+    BeforeConnect = DataConnectionBeforeConnect
+    Left = 208
+    Top = 32
+  end
+  object FDLocalSQL1: TFDLocalSQL
+    Connection = LocalSQLConnection
+    Active = True
+    DataSets = <
+      item
+        DataSet = EmployeeQuery
+        Name = 'Employees'
+      end
+      item
+        DataSet = OrdersMemTable
+        Name = 'Orders'
+      end>
+    Left = 384
+    Top = 8
+  end
+  object EmployeeQuery: TFDQuery
+    Active = True
+    Connection = DataConnection
+    SQL.Strings = (
+      'select * from EMPLOYEE')
+    Left = 208
+    Top = 88
+  end
+  object OrdersMemTable: TFDMemTable
+    Active = True
+    FieldDefs = <
+      item
+        Name = 'EMP_NO'
+        DataType = ftInteger
+      end
+      item
+        Name = 'Description'
+        DataType = ftString
+        Size = 100
+      end
+      item
+        Name = 'Quantity'
+        DataType = ftInteger
+      end
+      item
+        Name = 'UnitPrice'
+        DataType = ftCurrency
+        Precision = 19
+      end>
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    FormatOptions.AssignedValues = [fvMaxBcdPrecision, fvMaxBcdScale]
+    FormatOptions.MaxBcdPrecision = 2147483647
+    FormatOptions.MaxBcdScale = 2147483647
+    ResourceOptions.AssignedValues = [rvPersistent, rvSilentMode]
+    ResourceOptions.Persistent = True
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvUpdateChngFields, uvUpdateMode, uvLockMode, uvLockPoint, uvLockWait, uvRefreshMode, uvFetchGeneratorsPoint, uvCheckRequired, uvCheckReadOnly, uvCheckUpdatable, uvAutoCommitUpdates]
+    UpdateOptions.LockWait = True
+    UpdateOptions.FetchGeneratorsPoint = gpNone
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    StoreDefs = True
+    Left = 328
+    Top = 88
+    Content = {
+      414442530F001E28EA020000FF00010001FF02FF0304001C0000004F00720064
+      006500720073004D0065006D005400610062006C00650005000A000000540061
+      0062006C0065000600000000000700000800000000000900320000000A0000FF
+      0BFF0C04000C00000045004D0050005F004E004F0005000C00000045004D0050
+      005F004E004F000D00010000000F000E00100001110001120001130001140001
+      15000116000C00000045004D0050005F004E004F00FEFF0C0400160000004400
+      650073006300720069007000740069006F006E00050016000000440065007300
+      6300720069007000740069006F006E000D00020000000F001700180064000000
+      1000011100011200011300011400011500011600160000004400650073006300
+      720069007000740069006F006E00190064000000FEFF0C040010000000510075
+      0061006E0074006900740079000500100000005100750061006E007400690074
+      0079000D00030000000F000E0010000111000112000113000114000115000116
+      00100000005100750061006E007400690074007900FEFF0C0400120000005500
+      6E00690074005000720069006300650005001200000055006E00690074005000
+      72006900630065000D00040000000F001A001B00130000001C00040000001000
+      0111000112000113000114000115000116001200000055006E00690074005000
+      72006900630065001D00130000001E0004000000FEFEFF1FFEFF20FEFF21FF22
+      230000000000FF240000690000000100060000004170706C657302000A000000
+      0300B80B000000000000FEFEFF22230001000000FF2400006900000001000700
+      00004F72616E67657302000700000003008813000000000000FEFEFF22230002
+      000000FF2400002500000001000700000042616E616E61730200080000000300
+      7017000000000000FEFEFF22230003000000FF24000025000000010005000000
+      50656172730200020000000300AC0D000000000000FEFEFEFEFEFF25FEFF2627
+      0031000000FF28FEFEFE0E004D0061006E0061006700650072001E0055007000
+      6400610074006500730052006500670069007300740072007900120054006100
+      62006C0065004C006900730074000A005400610062006C00650008004E006100
+      6D006500140053006F0075007200630065004E0061006D0065000A0054006100
+      620049004400240045006E0066006F0072006300650043006F006E0073007400
+      7200610069006E00740073000C004C006F00630061006C0065001E004D006900
+      6E0069006D0075006D0043006100700061006300690074007900180043006800
+      650063006B004E006F0074004E0075006C006C00140043006F006C0075006D00
+      6E004C006900730074000C0043006F006C0075006D006E00100053006F007500
+      720063006500490044000E006400740049006E00740033003200100044006100
+      7400610054007900700065001400530065006100720063006800610062006C00
+      6500120041006C006C006F0077004E0075006C006C0008004200610073006500
+      14004F0041006C006C006F0077004E0075006C006C0012004F0049006E005500
+      7000640061007400650010004F0049006E00570068006500720065001A004F00
+      72006900670069006E0043006F006C004E0061006D0065001800640074004100
+      6E007300690053007400720069006E0067000800530069007A00650014005300
+      6F007500720063006500530069007A0065001400640074004300750072007200
+      65006E0063007900120050007200650063006900730069006F006E000A005300
+      630061006C0065001E0053006F00750072006300650050007200650063006900
+      730069006F006E00160053006F0075007200630065005300630061006C006500
+      1C0043006F006E00730074007200610069006E0074004C006900730074001000
+      56006900650077004C006900730074000E0052006F0077004C00690073007400
+      060052006F0077000A0052006F0077004900440010004F007200690067006900
+      6E0061006C001800520065006C006100740069006F006E004C00690073007400
+      1C0055007000640061007400650073004A006F00750072006E0061006C001200
+      530061007600650050006F0069006E0074000E004300680061006E0067006500
+      7300}
+    object OrdersMemTableEMP_NO: TIntegerField
+      FieldName = 'EMP_NO'
+    end
+    object OrdersMemTableDescription: TStringField
+      FieldName = 'Description'
+      Size = 100
+    end
+    object OrdersMemTableQuantity: TIntegerField
+      FieldName = 'Quantity'
+    end
+    object OrdersMemTableUnitPrice: TCurrencyField
+      FieldName = 'UnitPrice'
+    end
+  end
+  object LocalSQLConnection: TFDConnection
+    Params.Strings = (
+      'DriverID=SQLite')
+    Connected = True
+    LoginPrompt = False
+    Left = 456
+    Top = 32
+  end
+  object EmployeeWithOrdersQuery: TFDQuery
+    Active = True
+    Connection = LocalSQLConnection
+    SQL.Strings = (
+      'select '
+      '  E.FULL_NAME, '
+      '  O.*, O.UNITPRICE * O.QUANTITY TOTAL'
+      'from EMPLOYEES E'
+      'inner join ORDERS O on E.EMP_NO = O.EMP_NO ')
+    Left = 456
+    Top = 88
+  end
+  object BSEmpWithOrdersQuery: TBindSourceDB
+    DataSet = EmployeeWithOrdersQuery
+    ScopeMappings = <>
+    Left = 456
+    Top = 144
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 604
+    Top = 349
+    object LinkListControlToField1: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = BSEmpWithOrdersQuery
+      FieldName = 'Description'
+      Control = EmpWithOrdersListView
+      FillExpressions = <
+        item
+          SourceMemberName = 'TOTAL'
+          ControlMemberName = 'Detail'
+          CustomFormat = 'Format('#39'%%f '#8364#39', Value+0)'
+        end>
+      FillHeaderExpressions = <>
+      FillHeaderFieldName = 'FULL_NAME'
+      FillBreakGroups = <>
+    end
+    object LinkGridToDataSourceBindSourceDB2: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BSOrdersMemTable
+      GridControl = OrdersGrid
+      Columns = <>
+    end
+    object LinkListControlToField2: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = BSEmployeeQuery
+      FieldName = 'FULL_NAME'
+      Control = EmployeesListView
+      FillExpressions = <
+        item
+          SourceMemberName = 'EMP_NO'
+          ControlMemberName = 'Detail'
+        end>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+  end
+  object BSOrdersMemTable: TBindSourceDB
+    DataSet = OrdersMemTable
+    ScopeMappings = <>
+    Left = 328
+    Top = 144
+  end
+  object BSEmployeeQuery: TBindSourceDB
+    DataSet = EmployeeQuery
+    ScopeMappings = <>
+    Left = 208
+    Top = 144
+  end
+end

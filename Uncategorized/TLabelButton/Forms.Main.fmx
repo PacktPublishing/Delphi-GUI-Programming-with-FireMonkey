@@ -1,0 +1,76 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  StyleBook = StyleBook1
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Label1: TLabel
+    AutoSize = True
+    HitTest = True
+    Position.X = 112.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 134.000000000000000000
+    Size.Height = 6.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.WordWrap = False
+    Text = 'My first label, with autosize'
+    TabOrder = 0
+    OnApplyStyleLookup = Label1ApplyStyleLookup
+    OnClick = Label1Click
+  end
+  object Label2: TLabel
+    StyledSettings = [Family, Size, Style]
+    HitTest = True
+    Position.X = 112.000000000000000000
+    Position.Y = 72.000000000000000000
+    Size.Width = 249.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.FontColor = claCrimson
+    TextSettings.HorzAlign = Center
+    Text = 'My second label, red centered text'
+    TabOrder = 2
+    OnApplyStyleLookup = Label1ApplyStyleLookup
+    OnClick = Label2Click
+  end
+  object StyleBook1: TStyleBook
+    Styles = <
+      item
+      end
+      item
+        Platform = 'Windows 10 Desktop'
+        ResourcesBin = {
+          464D585F5354594C4520322E3501060A4C6162656C7374796C6503CC01005450
+          463007544C61796F757400095374796C654E616D65060A4C6162656C7374796C
+          6505416C69676E070643656E7465720748697454657374090A53697A652E5769
+          6474680500000000000000F005400B53697A652E486569676874050000000000
+          00008803401453697A652E506C6174666F726D44656661756C7408085461624F
+          726465720200000754427574746F6E00095374796C654E616D65060474657874
+          07416E63686F72730B06616B4C65667405616B546F7007616B52696768740861
+          6B426F74746F6D000E5374796C656453657474696E67730B0646616D696C7904
+          53697A65055374796C65000C4D617267696E732E4C6566740500000000000000
+          A001C00B4D617267696E732E546F700500000000000000A001C00D4D61726769
+          6E732E52696768740500000000000000A001C00E4D617267696E732E426F7474
+          6F6D0500000000000000A001C00A506F736974696F6E2E580500000000000000
+          A001C00A506F736974696F6E2E590500000000000000A001C00A53697A652E57
+          6964746805000000000000008206400B53697A652E4865696768740500000000
+          000000D803401453697A652E506C6174666F726D44656661756C740808546162
+          4F726465720200000000}
+      end>
+    Left = 32
+    Top = 24
+  end
+  object Label3: TLabel
+    Position.X = 112.000000000000000000
+    Position.Y = 128.000000000000000000
+    Text = 'Label3'
+    TabOrder = 4
+    OnApplyStyleLookup = Label1ApplyStyleLookup
+    OnClick = Label3Click
+  end
+end

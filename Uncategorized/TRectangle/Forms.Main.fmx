@@ -1,0 +1,429 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 519
+  ClientWidth = 537
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Rectangle1: TRectangle
+    Fill.Color = claLightskyblue
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claBlue
+    Stroke.Thickness = 5.000000000000000000
+  end
+  object Rectangle2: TRectangle
+    Fill.Color = claLightskyblue
+    Position.X = 8.000000000000000000
+    Position.Y = 72.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claBlue
+    Stroke.Thickness = 5.000000000000000000
+    XRadius = 10.000000000000000000
+    YRadius = 10.000000000000000000
+  end
+  object Rectangle3: TRectangle
+    Corners = [TopLeft, BottomLeft]
+    Fill.Color = claLightskyblue
+    Position.X = 8.000000000000000000
+    Position.Y = 200.000000000000000000
+    Sides = [Top, Left, Bottom]
+    Size.Width = 100.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claBlue
+    Stroke.Thickness = 5.000000000000000000
+    XRadius = 10.000000000000000000
+    YRadius = 10.000000000000000000
+  end
+  object Rectangle4: TRectangle
+    Fill.Color = claLightskyblue
+    Position.X = 108.000000000000000000
+    Position.Y = 200.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claBlue
+    Stroke.Thickness = 5.000000000000000000
+  end
+  object Rectangle5: TRectangle
+    Corners = [TopRight, BottomRight]
+    Fill.Color = claLightskyblue
+    Position.X = 208.000000000000000000
+    Position.Y = 200.000000000000000000
+    Sides = [Top, Bottom, Right]
+    Size.Width = 100.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claBlue
+    Stroke.Thickness = 5.000000000000000000
+    XRadius = 10.000000000000000000
+    YRadius = 10.000000000000000000
+  end
+  object Rectangle6: TRectangle
+    Corners = [TopLeft, TopRight]
+    Fill.Color = claLightskyblue
+    Position.X = 8.000000000000000000
+    Position.Y = 264.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claBlue
+    Stroke.Thickness = 5.000000000000000000
+    XRadius = 10.000000000000000000
+    YRadius = 10.000000000000000000
+  end
+  object Rectangle7: TRectangle
+    Corners = [TopLeft, TopRight]
+    Fill.Color = claLightskyblue
+    Position.X = 108.000000000000000000
+    Position.Y = 264.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claBlue
+    Stroke.Thickness = 5.000000000000000000
+    XRadius = 10.000000000000000000
+    YRadius = 10.000000000000000000
+  end
+  object Rectangle8: TRectangle
+    Corners = [TopLeft, TopRight]
+    Fill.Color = claLightskyblue
+    Position.X = 208.000000000000000000
+    Position.Y = 264.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claBlue
+    Stroke.Thickness = 5.000000000000000000
+    XRadius = 10.000000000000000000
+    YRadius = 10.000000000000000000
+  end
+  object Rectangle9: TRectangle
+    Corners = [TopLeft, TopRight, BottomRight]
+    Fill.Color = claLightskyblue
+    Position.X = 8.000000000000000000
+    Position.Y = 328.000000000000000000
+    Sides = [Top, Left, Bottom]
+    Size.Width = 100.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claBlue
+    Stroke.Thickness = 5.000000000000000000
+    XRadius = 10.000000000000000000
+    YRadius = 10.000000000000000000
+  end
+  object Rectangle12: TRectangle
+    Fill.Color = claLightskyblue
+    Position.X = 112.000000000000000000
+    Position.Y = 392.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claBlue
+    Stroke.Thickness = 5.000000000000000000
+    XRadius = 10.000000000000000000
+    YRadius = 10.000000000000000000
+  end
+  object Rectangle13: TRectangle
+    CornerType = InnerRound
+    Fill.Color = claLightskyblue
+    Position.X = 216.000000000000000000
+    Position.Y = 392.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claBlue
+    Stroke.Thickness = 5.000000000000000000
+    XRadius = 10.000000000000000000
+    YRadius = 10.000000000000000000
+  end
+  object Rectangle14: TRectangle
+    CornerType = InnerLine
+    Fill.Color = claLightskyblue
+    Position.X = 320.000000000000000000
+    Position.Y = 392.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claBlue
+    Stroke.Thickness = 5.000000000000000000
+    XRadius = 10.000000000000000000
+    YRadius = 10.000000000000000000
+  end
+  object Rectangle15: TRectangle
+    CornerType = Bevel
+    Fill.Color = claLightskyblue
+    Position.X = 424.000000000000000000
+    Position.Y = 392.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claBlue
+    Stroke.Thickness = 5.000000000000000000
+    XRadius = 10.000000000000000000
+    YRadius = 10.000000000000000000
+  end
+  object Rectangle10: TRectangle
+    Corners = [TopLeft, TopRight]
+    Fill.Color = claLightskyblue
+    Position.X = 112.000000000000000000
+    Position.Y = 328.000000000000000000
+    Sides = [Top, Bottom]
+    Size.Width = 100.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claBlue
+    Stroke.Thickness = 5.000000000000000000
+    XRadius = 10.000000000000000000
+    YRadius = 10.000000000000000000
+  end
+  object Rectangle11: TRectangle
+    Corners = [TopLeft, TopRight, BottomLeft]
+    Fill.Color = claLightskyblue
+    Position.X = 216.000000000000000000
+    Position.Y = 328.000000000000000000
+    Sides = [Top, Bottom, Right]
+    Size.Width = 100.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claBlue
+    Stroke.Thickness = 5.000000000000000000
+    XRadius = 10.000000000000000000
+    YRadius = 10.000000000000000000
+  end
+  object Rectangle16: TRectangle
+    Corners = [TopLeft, BottomRight]
+    Fill.Color = claLightskyblue
+    Position.X = 8.000000000000000000
+    Position.Y = 456.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claBlue
+    Stroke.Thickness = 5.000000000000000000
+    XRadius = 10.000000000000000000
+    YRadius = 10.000000000000000000
+  end
+  object Rectangle17: TRectangle
+    Corners = [TopRight, BottomLeft]
+    Fill.Color = claLightskyblue
+    Position.X = 112.000000000000000000
+    Position.Y = 456.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claBlue
+    Stroke.Thickness = 5.000000000000000000
+    XRadius = 10.000000000000000000
+    YRadius = 10.000000000000000000
+  end
+  object Rectangle18: TRectangle
+    Fill.Color = claLightskyblue
+    Position.X = 112.000000000000000000
+    Position.Y = 8.000000000000000000
+    Sides = [Left, Bottom, Right]
+    Size.Width = 100.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claBlue
+    Stroke.Thickness = 5.000000000000000000
+  end
+  object Rectangle19: TRectangle
+    Fill.Color = claLightskyblue
+    Position.X = 216.000000000000000000
+    Position.Y = 8.000000000000000000
+    Sides = [Bottom, Right]
+    Size.Width = 100.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claBlue
+    Stroke.Thickness = 5.000000000000000000
+  end
+  object Rectangle20: TRectangle
+    Fill.Color = claLightskyblue
+    Position.X = 320.000000000000000000
+    Position.Y = 8.000000000000000000
+    Sides = [Right]
+    Size.Width = 100.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claBlue
+    Stroke.Thickness = 5.000000000000000000
+  end
+  object Rectangle21: TRectangle
+    Fill.Color = claLightskyblue
+    Position.X = 112.000000000000000000
+    Position.Y = 72.000000000000000000
+    Sides = [Left, Bottom, Right]
+    Size.Width = 100.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claBlue
+    Stroke.Thickness = 5.000000000000000000
+    XRadius = 10.000000000000000000
+    YRadius = 10.000000000000000000
+  end
+  object Rectangle22: TRectangle
+    Fill.Color = claLightskyblue
+    Position.X = 216.000000000000000000
+    Position.Y = 72.000000000000000000
+    Sides = [Bottom, Right]
+    Size.Width = 100.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claBlue
+    Stroke.Thickness = 5.000000000000000000
+    XRadius = 10.000000000000000000
+    YRadius = 10.000000000000000000
+  end
+  object Rectangle23: TRectangle
+    Fill.Color = claLightskyblue
+    Position.X = 320.000000000000000000
+    Position.Y = 72.000000000000000000
+    Sides = [Right]
+    Size.Width = 100.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claBlue
+    Stroke.Thickness = 5.000000000000000000
+    XRadius = 10.000000000000000000
+    YRadius = 10.000000000000000000
+  end
+  object Rectangle24: TRectangle
+    Fill.Color = claLightskyblue
+    Position.X = 424.000000000000000000
+    Position.Y = 8.000000000000000000
+    Sides = []
+    Size.Width = 100.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claBlue
+    Stroke.Thickness = 5.000000000000000000
+  end
+  object Rectangle25: TRectangle
+    Fill.Color = claLightskyblue
+    Position.X = 424.000000000000000000
+    Position.Y = 72.000000000000000000
+    Sides = []
+    Size.Width = 100.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claBlue
+    Stroke.Thickness = 5.000000000000000000
+    XRadius = 10.000000000000000000
+    YRadius = 10.000000000000000000
+  end
+  object Rectangle26: TRectangle
+    Corners = [TopLeft, BottomRight]
+    Fill.Color = claLightskyblue
+    Position.X = 320.000000000000000000
+    Position.Y = 456.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claBlue
+    Stroke.Thickness = 5.000000000000000000
+    XRadius = 25.000000000000000000
+    YRadius = 25.000000000000000000
+  end
+  object Rectangle27: TRectangle
+    Corners = [TopRight, BottomLeft]
+    Fill.Color = claLightskyblue
+    Position.X = 424.000000000000000000
+    Position.Y = 456.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claBlue
+    Stroke.Thickness = 5.000000000000000000
+    XRadius = 25.000000000000000000
+    YRadius = 25.000000000000000000
+  end
+  object Rectangle28: TRectangle
+    Fill.Color = claLightskyblue
+    Position.X = 8.000000000000000000
+    Position.Y = 392.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claBlue
+    Stroke.Thickness = 5.000000000000000000
+  end
+  object Rectangle29: TRectangle
+    Fill.Color = claLightskyblue
+    Position.X = 8.000000000000000000
+    Position.Y = 136.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claBlue
+    Stroke.Thickness = 5.000000000000000000
+    XRadius = 10.000000000000000000
+    YRadius = 10.000000000000000000
+  end
+  object Rectangle30: TRectangle
+    Corners = [BottomLeft, BottomRight]
+    Fill.Color = claLightskyblue
+    Position.X = 112.000000000000000000
+    Position.Y = 136.000000000000000000
+    Sides = [Left, Bottom, Right]
+    Size.Width = 100.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claBlue
+    Stroke.Thickness = 5.000000000000000000
+    XRadius = 10.000000000000000000
+    YRadius = 10.000000000000000000
+  end
+  object Rectangle31: TRectangle
+    Corners = [BottomRight]
+    Fill.Color = claLightskyblue
+    Position.X = 216.000000000000000000
+    Position.Y = 136.000000000000000000
+    Sides = [Bottom, Right]
+    Size.Width = 100.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claBlue
+    Stroke.Thickness = 5.000000000000000000
+    XRadius = 10.000000000000000000
+    YRadius = 10.000000000000000000
+  end
+  object Rectangle32: TRectangle
+    Corners = []
+    Fill.Color = claLightskyblue
+    Position.X = 320.000000000000000000
+    Position.Y = 136.000000000000000000
+    Sides = [Right]
+    Size.Width = 100.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claBlue
+    Stroke.Thickness = 5.000000000000000000
+    XRadius = 10.000000000000000000
+    YRadius = 10.000000000000000000
+  end
+  object Rectangle33: TRectangle
+    Corners = []
+    Fill.Color = claLightskyblue
+    Position.X = 424.000000000000000000
+    Position.Y = 136.000000000000000000
+    Sides = []
+    Size.Width = 100.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claBlue
+    Stroke.Thickness = 5.000000000000000000
+    XRadius = 10.000000000000000000
+    YRadius = 10.000000000000000000
+  end
+end

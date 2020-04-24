@@ -1,0 +1,97 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 516
+  ClientWidth = 829
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Text4: TText
+    Align = Contents
+    Opacity = 0.250000000000000000
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+    Size.Width = 809.000000000000000000
+    Size.Height = 496.000000000000000000
+    Size.PlatformDefault = False
+    Text = 
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi c' +
+      'ursus neque ullamcorper risus venenatis vestibulum. Sed molestie' +
+      ' turpis finibus, commodo enim a, varius lacus. Vestibulum lacus ' +
+      'metus, luctus vel nibh in, rutrum egestas felis. Fusce at urna v' +
+      'itae eros venenatis dapibus at in metus. Aliquam sit amet libero' +
+      ' vehicula, elementum ante sed, ultricies sem. Integer ex eros, i' +
+      'mperdiet nec enim vitae, molestie iaculis sem. Sed consequat pre' +
+      'tium sapien et malesuada. Proin volutpat condimentum pretium. Ma' +
+      'ecenas porttitor dolor auctor nunc tempor aliquam. Vestibulum an' +
+      'te ipsum primis in faucibus orci luctus et ultrices posuere cubi' +
+      'lia Curae; Quisque at lacus ut massa scelerisque dignissim eget ' +
+      'malesuada arcu. Nunc pharetra tempor iaculis. Sed lacinia magna ' +
+      'risus. Sed tristique sapien ullamcorper nunc mollis, vitae tinci' +
+      'dunt odio finibus. Interdum et malesuada fames ac ante ipsum pri' +
+      'mis in faucibus.'
+    TextSettings.Font.Size = 24.000000000000000000
+    TextSettings.FontColor = claCrimson
+  end
+  object Text1: TText
+    Position.X = 24.000000000000000000
+    Position.Y = 56.000000000000000000
+    RotationAngle = -30.000000000000000000
+    Size.Width = 217.000000000000000000
+    Size.Height = 121.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Lorem ipsum dolor sit amet,'
+    TextSettings.Font.Size = 24.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.FontColor = claBlueviolet
+    TextSettings.HorzAlign = Leading
+    TextSettings.VertAlign = Leading
+  end
+  object Text2: TText
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    Position.X = 352.000000000000000000
+    Position.Y = 104.000000000000000000
+    RotationAngle = 15.000000000000000000
+    Size.Width = 433.000000000000000000
+    Size.Height = 129.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'consectetur adipiscing elit.'
+    TextSettings.Font.Family = 'Palatino Linotype'
+    TextSettings.Font.Size = 48.000000000000000000
+    TextSettings.Font.StyleExt = {04070000000000000004000000}
+    TextSettings.FontColor = claDarkgreen
+    TextSettings.Trimming = Character
+    TextSettings.WordWrap = False
+    TextSettings.HorzAlign = Leading
+  end
+  object Text3: TText
+    Align = Horizontal
+    Position.Y = 259.000000000000000000
+    Size.Width = 829.000000000000000000
+    Size.Height = 46.000000000000000000
+    Size.PlatformDefault = False
+    Stretch = True
+    Text = 
+      'Curabitur sagittis, leo ut porttitor mattis, libero elit digniss' +
+      'im nibh, a lobortis libero lectus vel lectus.'
+    object Text5: TText
+      ClipParent = True
+      Position.X = 512.000000000000000000
+      Position.Y = -192.000000000000000000
+      Size.Width = 233.000000000000000000
+      Size.Height = 361.000000000000000000
+      Size.PlatformDefault = False
+      Text = 
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi c' +
+        'ursus neque ullamcorper risus venenatis vestibulum. Sed molestie' +
+        ' turpis finibus, commodo enim a, varius lacus.'
+      TextSettings.Font.Size = 24.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claDeeppink
+    end
+  end
+end

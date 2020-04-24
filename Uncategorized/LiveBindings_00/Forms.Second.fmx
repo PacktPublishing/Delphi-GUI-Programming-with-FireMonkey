@@ -1,0 +1,45 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 480
+  ClientWidth = 640
+  Visible = True
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Text1: TText
+    Position.X = 72.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 241.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Button1: TButton
+    Position.X = 272.000000000000000000
+    Position.Y = 208.000000000000000000
+    TabOrder = 2
+    Text = 'Button1'
+  end
+  object CheckBox1: TCheckBox
+    IsChecked = True
+    Position.X = 392.000000000000000000
+    Position.Y = 176.000000000000000000
+    TabOrder = 3
+    Text = 'CheckBox1'
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 160
+    Top = 160
+    object LinkControlToPropertyEnabled: TLinkControlToProperty
+      Category = 'Quick Bindings'
+      Control = CheckBox1
+      Track = True
+      Component = Button1
+      ComponentProperty = 'Enabled'
+    end
+  end
+end

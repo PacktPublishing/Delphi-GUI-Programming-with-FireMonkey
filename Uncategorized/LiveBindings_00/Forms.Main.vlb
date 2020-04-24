@@ -1,0 +1,17 @@
+﻿[BindingsList1]
+Coordinates=0,0,82,33
+
+[Form1]
+Coordinates=10,87,45,33
+Visible=True
+
+[Button1]
+Coordinates=10,10,53,51
+
+[Form2.Text1]
+Coordinates=250,120,75,33
+Visible=False
+
+[Edit1]
+Coordinates=143,10,40,51
+

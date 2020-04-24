@@ -1,0 +1,115 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'PullToRefresh'
+  ClientHeight = 440
+  ClientWidth = 376
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object ListView1: TListView
+    ItemAppearanceClassName = 'TListItemRightDetailAppearance'
+    ItemEditAppearanceClassName = 'TListItemRightDetailDeleteAppearance'
+    HeaderAppearanceClassName = 'TListHeaderObjects'
+    FooterAppearanceClassName = 'TListHeaderObjects'
+    ItemIndex = 0
+    Align = Scale
+    Position.X = 4.700000762939453000
+    Position.Y = 36.666664123535160000
+    Size.Width = 367.187408447265600000
+    Size.Height = 395.999847412109400000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    ItemAppearanceObjects.ItemObjects.Detail.WordWrap = True
+    ItemAppearanceObjects.ItemObjects.Detail.Width = 200.000000000000000000
+    OnPullRefresh = ListView1PullRefresh
+    PullToRefresh = True
+  end
+  object AddButton: TButton
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    TabOrder = 5
+    Text = 'Manual'
+    OnClick = AddButtonClick
+  end
+  object ToggleButton: TButton
+    StaysPressed = True
+    IsPressed = True
+    Position.X = 96.000000000000000000
+    Position.Y = 8.000000000000000000
+    TabOrder = 7
+    Text = 'Auto'
+    OnClick = ToggleButtonClick
+  end
+  object ClearButton: TButton
+    Anchors = [akTop, akRight]
+    Position.X = 288.000000000000000000
+    Position.Y = 8.000000000000000000
+    TabOrder = 9
+    Text = 'Clear'
+    OnClick = ClearButtonClick
+  end
+  object AdapterBindSource1: TAdapterBindSource
+    AutoActivate = True
+    OnCreateAdapter = AdapterBindSource1CreateAdapter
+    Adapter = DataGeneratorAdapter1
+    ScopeMappings = <>
+    Left = 88
+    Top = 288
+  end
+  object DataGeneratorAdapter1: TDataGeneratorAdapter
+    FieldDefs = <
+      item
+        Name = 'When'
+        FieldType = ftDateTime
+        Generator = 'DateTime'
+        ReadOnly = False
+      end
+      item
+        Name = 'Who'
+        Generator = 'ContactNames'
+        ReadOnly = False
+      end
+      item
+        Name = 'What'
+        FieldType = ftInteger
+        Generator = 'Integers'
+        ReadOnly = False
+      end>
+    Active = True
+    AutoPost = False
+    Options = [loptAllowInsert, loptAllowDelete, loptAllowModify]
+    Left = 88
+    Top = 232
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 140
+    Top = 189
+    object LinkListControlToField1: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = AdapterBindSource1
+      FieldName = 'What'
+      Control = ListView1
+      FillExpressions = <
+        item
+          SourceMemberName = 'When'
+          ControlMemberName = 'Detail'
+          CustomFormat = 
+            'FormatDateTime('#39'dd-mm hh:nn.ss'#39', %s) + '#39' ('#39' + Owner.Who.Value + ' +
+            #39')'#39
+        end>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+  end
+  object Timer1: TTimer
+    Interval = 5000
+    OnTimer = Timer1Timer
+    Left = 96
+    Top = 128
+  end
+end

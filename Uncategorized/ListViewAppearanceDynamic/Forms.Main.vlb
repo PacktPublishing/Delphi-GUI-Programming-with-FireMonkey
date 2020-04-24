@@ -1,0 +1,16 @@
+﻿[ListView1]
+Coordinates=50,0,98,249
+Visible=True
+
+[ContactsPBS]
+Coordinates=300,30,79,177
+
+[ImageList1]
+Coordinates=255,1,68,33
+
+[]
+Coordinates=118,1,116,51
+
+[BindingsList1]
+Coordinates=120,197,82,33
+

@@ -1,0 +1,45 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 419
+  ClientWidth = 618
+  Fill.Color = claSteelblue
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Text2: TText
+    Position.X = 24.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 250.000000000000000000
+    Size.Height = 200.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'My Text With Some Shadow'
+    TextSettings.Font.Size = 48.000000000000000000
+    TextSettings.FontColor = claAliceblue
+    object ShadowEffect2: TShadowEffect
+      Distance = 5.000000000000000000
+      Direction = 90.000000000000000000
+      Softness = 0.699999988079071100
+      Opacity = 0.899999976158142100
+      ShadowColor = claBlack
+    end
+  end
+  object Text3: TText
+    Position.X = 328.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 250.000000000000000000
+    Size.Height = 200.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'My Text With Some Reflection'
+    TextSettings.Font.Size = 48.000000000000000000
+    TextSettings.FontColor = claAliceblue
+    object ReflectionEffect1: TReflectionEffect
+      Opacity = 0.300000011920929000
+      Offset = 0
+      Length = 1.000000000000000000
+    end
+  end
+end

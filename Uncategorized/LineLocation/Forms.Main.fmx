@@ -1,0 +1,40 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Line1: TLine
+    LineType = Bottom
+    Position.X = 48.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 225.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Thickness = 50.000000000000000000
+  end
+  object Line2: TLine
+    LineLocation = Inner
+    LineType = Bottom
+    Position.X = 48.000000000000000000
+    Position.Y = 144.000000000000000000
+    Size.Width = 225.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Thickness = 50.000000000000000000
+  end
+  object Line3: TLine
+    LineLocation = InnerWithin
+    LineType = Bottom
+    Position.X = 48.000000000000000000
+    Position.Y = 208.000000000000000000
+    Size.Width = 225.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Thickness = 50.000000000000000000
+  end
+end

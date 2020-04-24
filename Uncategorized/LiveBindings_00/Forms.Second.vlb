@@ -1,0 +1,13 @@
+﻿[Text1]
+Coordinates=10,105,41,51
+
+[BindingsList1]
+Coordinates=70,1,82,33
+
+[Button1]
+Coordinates=10,10,53,69
+ExplicitSubNodes=Enabled
+
+[CheckBox1]
+Coordinates=143,19,70,51
+

@@ -1,0 +1,126 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 400
+  ClientWidth = 400
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object Layout1: TLayout
+    Align = Client
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+    Size.Width = 380.000000000000000000
+    Size.Height = 332.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Layout2: TLayout
+      Align = MostRight
+      Position.X = 330.000000000000000000
+      Size.Width = 50.000000000000000000
+      Size.Height = 332.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Label3: TLabel
+        Anchors = [akTop, akRight]
+        StyledSettings = [Family, Size, Style]
+        Margins.Left = 3.000000000000000000
+        Margins.Right = 3.000000000000000000
+        Position.X = -40.000000000000000000
+        Size.Width = 87.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.FontColor = claGray
+        Text = 'MostRight'
+        TabOrder = 1
+      end
+    end
+    object Layout3: TLayout
+      Align = Bottom
+      Position.Y = 282.000000000000000000
+      Size.Width = 330.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object Label4: TLabel
+        Align = Top
+        StyledSettings = [Family, Size, Style]
+        Margins.Left = 3.000000000000000000
+        Margins.Right = 3.000000000000000000
+        Position.X = 3.000000000000000000
+        Size.Width = 324.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.FontColor = claGray
+        Text = 'Bottom'
+        TabOrder = 1
+      end
+    end
+    object Layout4: TLayout
+      Align = Scale
+      Position.X = 65.000045776367190000
+      Position.Y = 41.000022888183590000
+      Size.Width = 199.999832153320300000
+      Size.Height = 199.999877929687500000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      object Layout5: TLayout
+        Align = VertCenter
+        Position.Y = 86.000000000000000000
+        Size.Width = 199.999832153320300000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Label2: TLabel
+          Align = Top
+          StyledSettings = [Family, Size, Style]
+          Margins.Left = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Position.X = 3.000000000000000000
+          Size.Width = 193.999832153320300000
+          Size.Height = 23.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.FontColor = claGray
+          Text = 'VertCenter'
+          TabOrder = 1
+        end
+      end
+      object Label1: TLabel
+        Align = Top
+        StyledSettings = [Family, Size, Style]
+        Margins.Left = 3.000000000000000000
+        Margins.Right = 3.000000000000000000
+        Position.X = 3.000000000000000000
+        Size.Width = 193.999832153320300000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.FontColor = claGray
+        Text = 'Scale'
+        TabOrder = 1
+      end
+    end
+    object Label5: TLabel
+      Align = Top
+      StyledSettings = [Family, Size, Style]
+      Margins.Left = 3.000000000000000000
+      Margins.Right = 3.000000000000000000
+      Position.X = 3.000000000000000000
+      Size.Width = 324.000000000000000000
+      Size.Height = 23.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.FontColor = claGray
+      Text = 'Client with Margins'
+      TabOrder = 1
+    end
+  end
+  object ToolBar1: TToolBar
+    Size.Width = 400.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+  end
+end
