@@ -77,7 +77,7 @@ begin
   StatusLabel.Text := 'Started';
 end;
 
-procedure TFormMainFormminateButtonClick(Sender: TObject);
+procedure TMainForm.TerminateButtonClick(Sender: TObject);
 begin
   if Assigned(FTask) then
   begin
