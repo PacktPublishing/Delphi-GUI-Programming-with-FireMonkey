@@ -1,0 +1,67 @@
+inherited MainForm_LgXhdpiPh: TMainForm_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 0
+  inherited ShowMessageButton: TButton
+    Position.X = 8.000000000000000000
+    Size.Width = 225.000000000000000000
+    Size.Height = 41.000000000000000000
+  end
+  inherited ShowMessageCloseButton: TButton
+    Position.X = 8.000000000000000000
+    Position.Y = 96.000000000000000000
+    Size.Width = 225.000000000000000000
+    Size.Height = 41.000000000000000000
+  end
+  inherited ShowMessageContextButton: TButton
+    Position.X = 8.000000000000000000
+    Position.Y = 136.000000000000000000
+    Size.Width = 225.000000000000000000
+    Size.Height = 41.000000000000000000
+  end
+  inherited InputQueryButton: TButton
+    Position.X = 8.000000000000000000
+    Position.Y = 200.000000000000000000
+    Size.Width = 225.000000000000000000
+    Size.Height = 41.000000000000000000
+  end
+  inherited InputQueryContextButton: TButton
+    Position.X = 8.000000000000000000
+    Position.Y = 240.000000000000000000
+    Size.Width = 225.000000000000000000
+    Size.Height = 41.000000000000000000
+  end
+  inherited ModeComboBox: TComboBox
+    Position.X = 112.000000000000000000
+    Position.Y = 14.000000000000000000
+    Size.Height = 32.000000000000000000
+  end
+  inherited OpenDialogButton: TButton
+    Position.X = 243.000000000000000000
+    Size.Height = 41.000000000000000000
+  end
+  inherited MsgDialogInfoButton: TButton
+    Position.X = 8.000000000000000000
+    Position.Y = 304.000000000000000000
+    Size.Width = 225.000000000000000000
+    Size.Height = 41.000000000000000000
+  end
+  inherited MsgDialogWarnButton: TButton
+    Position.X = 8.000000000000000000
+    Position.Y = 344.000000000000000000
+    Size.Width = 225.000000000000000000
+    Size.Height = 41.000000000000000000
+  end
+  inherited MsgDialogErrButton: TButton
+    Position.X = 8.000000000000000000
+    Position.Y = 384.000000000000000000
+    Size.Width = 225.000000000000000000
+    Size.Height = 41.000000000000000000
+  end
+  inherited MsgDialogConfButton: TButton
+    Position.X = 8.000000000000000000
+    Position.Y = 424.000000000000000000
+    Size.Width = 225.000000000000000000
+    Size.Height = 41.000000000000000000
+  end
+end

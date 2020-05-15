@@ -1,0 +1,63 @@
+object Form3: TForm3
+  Left = 0
+  Top = 0
+  Caption = 'Form3'
+  ClientHeight = 540
+  ClientWidth = 530
+  Padding.Left = 10.000000000000000000
+  Padding.Top = 10.000000000000000000
+  Padding.Right = 10.000000000000000000
+  Padding.Bottom = 10.000000000000000000
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object RightColumnLayout: TLayout
+    Align = MostRight
+    Margins.Bottom = 10.000000000000000000
+    Position.X = 420.000000000000000000
+    Position.Y = 10.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 460.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+  end
+  object TopLayout: TLayout
+    Align = Top
+    Margins.Right = 10.000000000000000000
+    Position.X = 10.000000000000000000
+    Position.Y = 10.000000000000000000
+    Size.Width = 400.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+  end
+  object BottomLayout: TLayout
+    Align = MostBottom
+    Position.X = 10.000000000000000000
+    Position.Y = 480.000000000000000000
+    Size.Width = 510.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+  end
+  object MainLayout: TLayout
+    Align = Client
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+    Size.Width = 400.000000000000000000
+    Size.Height = 400.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    object RelativeLayout: TLayout
+      Align = Scale
+      Position.X = 190.000000000000000000
+      Position.Y = 10.000000000000000000
+      Size.Width = 200.000000000000000000
+      Size.Height = 200.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+    end
+  end
+end

@@ -1,0 +1,19 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'TapProject'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnTap = FormTap
+  DesignerMasterStyle = 0
+  object Circle1: TCircle
+    Position.X = 16.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 50.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+  end
+end

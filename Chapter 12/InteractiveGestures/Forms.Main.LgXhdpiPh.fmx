@@ -1,0 +1,51 @@
+inherited MainForm_LgXhdpiPh: TMainForm_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  Touch.InteractiveGestures = [Pan]
+  DesignerMasterStyle = 0
+  inherited FrameRectangle: TRectangle
+    Size.Width = 350.000000000000000000
+    Size.Height = 547.000000000000000000
+    inherited FrameGlyph: TGlyph
+      Touch.InteractiveGestures = [Pan]
+      Size.Width = 350.000000000000000000
+      Size.Height = 547.000000000000000000
+    end
+  end
+  inherited ToolBar1: TToolBar
+    Size.Width = 450.000000000000000000
+    Size.Height = 48.000000000000000000
+    inherited PrevButton: TButton
+      Align = Left
+      Size.Width = 73.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+    end
+    inherited NextButton: TButton
+      Align = Right
+      Position.X = 377.000000000000000000
+      Size.Width = 73.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+  inherited GestureManager1: TGestureManager
+    GestureData = <
+      item
+        Control = Owner
+        Collection = <
+          item
+            Action = PrevAction
+            GestureID = sgiLeft
+          end
+          item
+            Action = NextAction
+            GestureID = sgiRight
+          end>
+      end
+      item
+        Control = FrameGlyph
+        Collection = <>
+      end>
+  end
+end

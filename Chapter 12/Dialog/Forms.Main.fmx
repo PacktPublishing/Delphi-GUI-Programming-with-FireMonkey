@@ -1,0 +1,139 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'DialogProject'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object ShowMessageButton: TButton
+    Position.X = 16.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 201.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 9
+    Text = 'ShowMessage'
+    OnClick = ShowMessageButtonClick
+  end
+  object ShowMessageCloseButton: TButton
+    Position.X = 16.000000000000000000
+    Position.Y = 88.000000000000000000
+    Size.Width = 201.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'ShowMessage Close'
+    OnClick = ShowMessageCloseButtonClick
+  end
+  object ShowMessageContextButton: TButton
+    Position.X = 16.000000000000000000
+    Position.Y = 120.000000000000000000
+    Size.Width = 201.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'ShowMessage Context'
+    OnClick = ShowMessageContextButtonClick
+  end
+  object InputQueryButton: TButton
+    Position.X = 16.000000000000000000
+    Position.Y = 184.000000000000000000
+    Size.Width = 201.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 8
+    Text = 'InputQuery'
+    OnClick = InputQueryButtonClick
+  end
+  object InputQueryContextButton: TButton
+    Position.X = 16.000000000000000000
+    Position.Y = 216.000000000000000000
+    Size.Width = 201.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'InputQuery Context'
+    OnClick = InputQueryContextButtonClick
+  end
+  object Label1: TLabel
+    Position.X = 16.000000000000000000
+    Position.Y = 21.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.HorzAlign = Trailing
+    Text = 'Mode:'
+    TabOrder = 10
+  end
+  object ModeComboBox: TComboBox
+    Items.Strings = (
+      'Platform'
+      'Async'
+      'Sync')
+    ItemIndex = 0
+    Position.X = 96.000000000000000000
+    Position.Y = 19.000000000000000000
+    Size.Width = 124.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 11
+    OnChange = ModeComboBoxChange
+  end
+  object OpenDialogButton: TButton
+    Position.X = 232.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 201.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'OpenDialog'
+    OnClick = OpenDialogButtonClick
+  end
+  object MsgDialogInfoButton: TButton
+    Position.X = 16.000000000000000000
+    Position.Y = 264.000000000000000000
+    Size.Width = 201.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    Text = 'MessageDialog Info'
+    OnClick = MsgDialogInfoButtonClick
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 280
+    Top = 344
+  end
+  object MsgDialogWarnButton: TButton
+    Position.X = 16.000000000000000000
+    Position.Y = 296.000000000000000000
+    Size.Width = 201.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    Text = 'MessageDialog Warn'
+    OnClick = MsgDialogWarnButtonClick
+  end
+  object MsgDialogErrButton: TButton
+    Position.X = 16.000000000000000000
+    Position.Y = 328.000000000000000000
+    Size.Width = 201.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Text = 'MessageDialog Err'
+    OnClick = MsgDialogErrButtonClick
+  end
+  object MsgDialogConfButton: TButton
+    Position.X = 16.000000000000000000
+    Position.Y = 360.000000000000000000
+    Size.Width = 201.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = 'MessageDialog Conf'
+    OnClick = MsgDialogConfButtonClick
+  end
+end

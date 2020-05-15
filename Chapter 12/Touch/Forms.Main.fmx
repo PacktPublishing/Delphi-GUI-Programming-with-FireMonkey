@@ -1,0 +1,133 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnTouch = FormTouch
+  DesignerMasterStyle = 0
+  object Circle1: TCircle
+    Fill.Kind = None
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 50.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claBlue
+    Stroke.Thickness = 5.000000000000000000
+  end
+  object Circle2: TCircle
+    Fill.Kind = None
+    Position.X = 64.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 50.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claPurple
+    Stroke.Thickness = 5.000000000000000000
+  end
+  object Circle3: TCircle
+    Fill.Kind = None
+    Position.X = 120.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 50.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claRed
+    Stroke.Thickness = 5.000000000000000000
+  end
+  object Circle4: TCircle
+    Fill.Kind = None
+    Position.X = 176.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 50.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claGreen
+    Stroke.Thickness = 5.000000000000000000
+  end
+  object Circle5: TCircle
+    Fill.Kind = None
+    Position.X = 232.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 50.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claDarkorange
+    Stroke.Thickness = 5.000000000000000000
+  end
+  object Circle6: TCircle
+    Fill.Kind = None
+    Position.X = 8.000000000000000000
+    Position.Y = 64.000000000000000000
+    Size.Width = 50.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claAqua
+    Stroke.Thickness = 5.000000000000000000
+  end
+  object Circle7: TCircle
+    Fill.Kind = None
+    Position.X = 64.000000000000000000
+    Position.Y = 64.000000000000000000
+    Size.Width = 50.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claFuchsia
+    Stroke.Thickness = 5.000000000000000000
+  end
+  object Circle8: TCircle
+    Fill.Kind = None
+    Position.X = 120.000000000000000000
+    Position.Y = 64.000000000000000000
+    Size.Width = 50.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claPink
+    Stroke.Thickness = 5.000000000000000000
+  end
+  object Circle9: TCircle
+    Fill.Kind = None
+    Position.X = 176.000000000000000000
+    Position.Y = 64.000000000000000000
+    Size.Width = 50.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claLime
+    Stroke.Thickness = 5.000000000000000000
+  end
+  object Circle10: TCircle
+    Fill.Kind = None
+    Position.X = 232.000000000000000000
+    Position.Y = 64.000000000000000000
+    Size.Width = 50.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claYellow
+    Stroke.Thickness = 5.000000000000000000
+  end
+  object ActionLabel: TLabel
+    Align = Bottom
+    Position.Y = 455.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.HorzAlign = Center
+    Text = 'ActionLabel'
+    TabOrder = 0
+  end
+  object DownCounterLabel: TLabel
+    Align = Bottom
+    Position.Y = 430.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.HorzAlign = Center
+    Text = 'DownCounterLabel'
+    TabOrder = 2
+  end
+end

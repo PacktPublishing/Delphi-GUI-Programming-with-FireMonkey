@@ -1,0 +1,230 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'Playground'
+  ClientHeight = 500
+  ClientWidth = 650
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object ToolsLayout: TLayout
+    Align = Left
+    Size.Width = 150.000000000000000000
+    Size.Height = 500.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object ExecuteButton: TButton
+      Anchors = [akLeft, akRight, akBottom]
+      Position.X = 20.000000000000000000
+      Position.Y = 444.000000000000000000
+      Size.Width = 110.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Execute'
+      OnClick = ExecuteButtonClick
+    end
+    object InterpolationComboBox: TComboBox
+      Anchors = [akLeft, akTop, akRight]
+      DropDownCount = 20
+      Position.X = 8.000000000000000000
+      Position.Y = 72.000000000000000000
+      Size.Width = 134.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+    end
+    object DurationEdit: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Anchors = [akLeft, akTop, akRight]
+      TabOrder = 5
+      Text = '3'
+      Position.X = 64.000000000000000000
+      Position.Y = 40.000000000000000000
+      Size.Width = 78.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object AnimationTypeComboBox: TComboBox
+      Anchors = [akLeft, akTop, akRight]
+      DropDownCount = 20
+      Position.X = 8.000000000000000000
+      Position.Y = 104.000000000000000000
+      Size.Width = 135.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+    end
+    object DurationLabel: TLabel
+      Position.X = 7.000000000000000000
+      Position.Y = 43.000000000000000000
+      Size.Width = 54.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.HorzAlign = Trailing
+      Text = 'Duration'
+      TabOrder = 6
+    end
+    object FrameRateEdit: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Anchors = [akLeft, akRight, akBottom]
+      TabOrder = 3
+      Text = '100'
+      Position.X = 80.000000000000000000
+      Position.Y = 408.000000000000000000
+      Size.Width = 62.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object FrameRateLabel: TLabel
+      Anchors = [akLeft, akBottom]
+      Position.X = 7.000000000000000000
+      Position.Y = 411.000000000000000000
+      Size.Width = 71.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.HorzAlign = Trailing
+      Text = 'Frame Rate'
+      TabOrder = 4
+    end
+  end
+  object PlaygroundLayout: TLayout
+    Align = Client
+    Size.Width = 500.000000000000000000
+    Size.Height = 500.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Rectangle1: TRectangle
+      Align = Center
+      Size.Width = 300.000000000000000000
+      Size.Height = 300.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claGreen
+      object DestinationLabel: TLabel
+        StyledSettings = [Family, Size, Style]
+        Position.X = 275.000000000000000000
+        Position.Y = -25.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.FontColor = claSlategray
+        Text = '(300, 0)'
+        TabOrder = 6
+      end
+      object OriginLabel: TLabel
+        StyledSettings = [Family, Size, Style]
+        Position.X = -25.000000000000000000
+        Position.Y = 308.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.FontColor = claSlategray
+        Text = '(0, 300)'
+        TabOrder = 5
+      end
+      object VertLine66: TLine
+        LineType = Left
+        Opacity = 0.500000000000000000
+        Position.X = 200.000000000000000000
+        Size.Width = 1.000000000000000000
+        Size.Height = 300.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = claGreen
+        Stroke.Dash = Dash
+      end
+      object VertLine33: TLine
+        LineType = Left
+        Opacity = 0.500000000000000000
+        Position.X = 100.000000000000000000
+        Size.Width = 1.000000000000000000
+        Size.Height = 300.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = claGreen
+        Stroke.Dash = Dash
+      end
+      object HorzLine66: TLine
+        LineType = Top
+        Opacity = 0.500000000000000000
+        Position.Y = 100.000000000000000000
+        Size.Width = 300.000000000000000000
+        Size.Height = 1.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = claGreen
+        Stroke.Dash = Dash
+      end
+      object HorzLine33: TLine
+        LineType = Top
+        Opacity = 0.500000000000000000
+        Position.Y = 200.000000000000000000
+        Size.Width = 300.000000000000000000
+        Size.Height = 1.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = claGreen
+        Stroke.Dash = Dash
+      end
+      object PinLayout: TLayout
+        Position.X = -1.000000000000000000
+        Position.Y = 299.000000000000000000
+        Size.Width = 2.000000000000000000
+        Size.Height = 2.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        object HorzAnimation: TFloatAnimation
+          Duration = 10.000000000000000000
+          OnProcess = HorzAnimationProcess
+          OnFinish = HorzAnimationFinish
+          PropertyName = 'Position.X'
+          StartValue = -1.000000000000000000
+          StopValue = 299.000000000000000000
+        end
+        object VertAnimation: TFloatAnimation
+          Duration = 10.000000000000000000
+          Interpolation = Bounce
+          PropertyName = 'Position.Y'
+          StartValue = 299.000000000000000000
+          StopValue = -1.000000000000000000
+        end
+        object Circle1: TCircle
+          Align = Center
+          Fill.Kind = Gradient
+          Fill.Gradient.Points = <
+            item
+              Color = xFF7D0101
+              Offset = 0.000000000000000000
+            end
+            item
+              Color = xFFFD4545
+              Offset = 1.000000000000000000
+            end>
+          Fill.Gradient.Style = Radial
+          Size.Width = 20.000000000000000000
+          Size.Height = 20.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFF7D0101
+          Stroke.Thickness = 2.000000000000000000
+        end
+      end
+      object HorzLabel: TLabel
+        Position.Y = -20.000000000000000000
+        Size.Width = 300.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.HorzAlign = Center
+        Text = 'HorzLabel'
+        TabOrder = 7
+      end
+    end
+    object TitleLabel: TLabel
+      Align = Top
+      StyledSettings = [Family, Style, FontColor]
+      Size.Width = 500.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.HorzAlign = Center
+      TabOrder = 1
+    end
+  end
+end

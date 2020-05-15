@@ -1,0 +1,97 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Rectangle1: TRectangle
+    Fill.Color = claRed
+    Position.X = 96.000000000000000000
+    Position.Y = 96.000000000000000000
+    Size.Width = 50.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Rectangle2: TRectangle
+    Position.X = 160.000000000000000000
+    Position.Y = 96.000000000000000000
+    Size.Width = 50.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    OnClick = Rectangle2Click
+    object ColorAnimation1: TColorAnimation
+      Enabled = True
+      Delay = 1.000000000000000000
+      Duration = 3.000000000000000000
+      Interpolation = Quadratic
+      OnProcess = ColorAnimation1Process
+      PropertyName = 'Fill.Color'
+      StartValue = claRed
+      StopValue = claBlue
+    end
+  end
+  object Rectangle3: TRectangle
+    Fill.Color = claBlue
+    Position.X = 224.000000000000000000
+    Position.Y = 96.000000000000000000
+    Size.Width = 50.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    object ColorKeyAnimation1: TColorKeyAnimation
+      Enabled = True
+      Delay = 1.000000000000000000
+      Duration = 3.000000000000000000
+      Keys = <
+        item
+          Value = claRed
+        end
+        item
+          Key = 0.500000000000000000
+          Value = claBlue
+        end
+        item
+          Key = 0.750000000000000000
+          Value = claGreen
+        end
+        item
+          Key = 1.000000000000000000
+          Value = claSilver
+        end>
+      OnProcess = ColorKeyAnimation1Process
+      PropertyName = 'Fill.Color'
+      StartFromCurrent = False
+    end
+  end
+  object ColorPanel1: TColorPanel
+    Color = claSpringgreen
+    ColorBox = ColorBox1
+    Position.X = 384.000000000000000000
+    Position.Y = 192.000000000000000000
+    Size.Width = 193.000000000000000000
+    Size.Height = 193.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+  end
+  object ColorBox1: TColorBox
+    Color = claSpringgreen
+    Position.X = 160.000000000000000000
+    Position.Y = 40.000000000000000000
+    TabOrder = 4
+  end
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Position.X = 48.000000000000000000
+    Position.Y = 192.000000000000000000
+    Size.Width = 305.000000000000000000
+    Size.Height = 265.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Viewport.Width = 301.000000000000000000
+    Viewport.Height = 261.000000000000000000
+  end
+end

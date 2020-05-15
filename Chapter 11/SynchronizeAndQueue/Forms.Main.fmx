@@ -1,0 +1,31 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'SynchronizeAndQueue'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object SynchronizeButton: TButton
+    Position.X = 8.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 129.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Synchronize'
+    OnClick = SynchronizeButtonClick
+  end
+  object QueueButton: TButton
+    Position.X = 8.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 129.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'Queue'
+    OnClick = QueueButtonClick
+  end
+end

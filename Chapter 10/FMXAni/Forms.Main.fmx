@@ -1,0 +1,206 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'FMXAni'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object XTrackBar: TTrackBar
+    CanParentFocus = True
+    Max = 300.000000000000000000
+    Orientation = Horizontal
+    Position.X = 30.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 300.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    OnChange = XTrackBarChange
+  end
+  object YTrackBar: TTrackBar
+    CanParentFocus = True
+    Max = 300.000000000000000000
+    Orientation = Horizontal
+    Position.X = 30.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 300.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+  end
+  object Rectangle1: TRectangle
+    Position.X = 30.000000000000000000
+    Position.Y = 100.000000000000000000
+    Size.Width = 300.000000000000000000
+    Size.Height = 300.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claGreen
+    object DestinationLabel: TLabel
+      StyledSettings = [Family, Size, Style]
+      Position.X = 275.000000000000000000
+      Position.Y = -25.000000000000000000
+      Size.Width = 50.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.FontColor = claSlategray
+      Text = '(300, 0)'
+      TabOrder = 6
+    end
+    object OriginLabel: TLabel
+      StyledSettings = [Family, Size, Style]
+      Position.X = -25.000000000000000000
+      Position.Y = 308.000000000000000000
+      Size.Width = 50.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.FontColor = claSlategray
+      Text = '(0, 300)'
+      TabOrder = 5
+    end
+    object VertLine66: TLine
+      LineType = Left
+      Opacity = 0.500000000000000000
+      Position.X = 200.000000000000000000
+      Size.Width = 1.000000000000000000
+      Size.Height = 300.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claGreen
+      Stroke.Dash = Dash
+    end
+    object VertLine33: TLine
+      LineType = Left
+      Opacity = 0.500000000000000000
+      Position.X = 100.000000000000000000
+      Size.Width = 1.000000000000000000
+      Size.Height = 300.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claGreen
+      Stroke.Dash = Dash
+    end
+    object HorzLine66: TLine
+      LineType = Top
+      Opacity = 0.500000000000000000
+      Position.Y = 100.000000000000000000
+      Size.Width = 300.000000000000000000
+      Size.Height = 1.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claGreen
+      Stroke.Dash = Dash
+    end
+    object HorzLine33: TLine
+      LineType = Top
+      Opacity = 0.500000000000000000
+      Position.Y = 200.000000000000000000
+      Size.Width = 300.000000000000000000
+      Size.Height = 1.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claGreen
+      Stroke.Dash = Dash
+    end
+    object PinLayout: TLayout
+      Position.X = -1.000000000000000000
+      Position.Y = 299.000000000000000000
+      Size.Width = 2.000000000000000000
+      Size.Height = 2.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      object Circle1: TCircle
+        Align = Center
+        Fill.Kind = Gradient
+        Fill.Gradient.Points = <
+          item
+            Color = xFF7D0101
+            Offset = 0.000000000000000000
+          end
+          item
+            Color = xFFFD4545
+            Offset = 1.000000000000000000
+          end>
+        Fill.Gradient.Style = Radial
+        Size.Width = 20.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = xFF7D0101
+        Stroke.Thickness = 2.000000000000000000
+      end
+    end
+    object HorzLabel: TLabel
+      Position.Y = -20.000000000000000000
+      Size.Width = 300.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.HorzAlign = Center
+      Text = 'HorzLabel'
+      TabOrder = 7
+    end
+  end
+  object Label1: TLabel
+    Position.X = 3.000000000000000000
+    Position.Y = 17.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.HorzAlign = Trailing
+    Text = 'X:'
+    TabOrder = 4
+  end
+  object Label2: TLabel
+    Position.X = 3.000000000000000000
+    Position.Y = 57.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.HorzAlign = Trailing
+    Text = 'Y:'
+    TabOrder = 3
+  end
+  object InterpolationGroupBox: TGroupBox
+    Position.X = 368.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 169.000000000000000000
+    Size.Height = 100.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Interpolation'
+    TabOrder = 5
+    object LinearIntRadioButton: TRadioButton
+      GroupName = 'Interpolation'
+      Position.X = 20.000000000000000000
+      Position.Y = 24.000000000000000000
+      TabOrder = 1
+      Text = 'Linear'
+    end
+    object QuadraticIntRadioButton: TRadioButton
+      GroupName = 'Interpolation'
+      IsChecked = True
+      Position.X = 20.000000000000000000
+      Position.Y = 48.000000000000000000
+      TabOrder = 0
+      Text = 'Quadratic'
+    end
+  end
+  object StepButton: TButton
+    Position.X = 392.000000000000000000
+    Position.Y = 136.000000000000000000
+    RepeatClick = True
+    TabOrder = 6
+    Text = 'Step'
+    OnClick = StepButtonClick
+  end
+  object AutoCheckBox: TCheckBox
+    Position.X = 392.000000000000000000
+    Position.Y = 168.000000000000000000
+    TabOrder = 7
+    Text = 'Automatic'
+    OnChange = AutoCheckBoxClick
+  end
+  object AutomaticTimer: TTimer
+    Enabled = False
+    Interval = 20
+    OnTimer = AutomaticTimerTimer
+    Left = 424
+    Top = 192
+  end
+end

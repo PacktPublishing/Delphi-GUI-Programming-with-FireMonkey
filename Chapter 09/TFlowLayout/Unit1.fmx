@@ -1,0 +1,109 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 206
+  ClientWidth = 595
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object FlowLayout1: TFlowLayout
+    Align = Client
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+    Size.Width = 575.000000000000000000
+    Size.Height = 186.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Justify = Justify
+    JustifyLastLine = Center
+    FlowDirection = LeftToRight
+    HorizontalGap = 10.000000000000000000
+    VerticalGap = 10.000000000000000000
+    object Button1: TButton
+      TabOrder = 0
+      Text = 'Button1'
+    end
+    object Button2: TButton
+      Position.X = 99.000000000000000000
+      TabOrder = 1
+      Text = 'Button2'
+    end
+    object Button3: TButton
+      Position.X = 198.000000000000000000
+      TabOrder = 2
+      Text = 'Button3'
+    end
+    object Button4: TButton
+      Position.X = 297.000000000000000000
+      TabOrder = 3
+      Text = 'Button4'
+    end
+    object Button5: TButton
+      Position.X = 396.000000000000000000
+      TabOrder = 4
+      Text = 'Button5'
+    end
+    object Button6: TButton
+      Position.X = 495.000000000000000000
+      TabOrder = 5
+      Text = 'Button6'
+    end
+    object Button7: TButton
+      Position.Y = 32.000000000000000000
+      TabOrder = 6
+      Text = 'Button7'
+    end
+    object Button8: TButton
+      Position.X = 99.000000000000000000
+      Position.Y = 32.000000000000000000
+      TabOrder = 7
+      Text = 'Button8'
+    end
+    object Button9: TButton
+      Position.X = 198.000000000000000000
+      Position.Y = 32.000000000000000000
+      TabOrder = 8
+      Text = 'Button9'
+    end
+    object Button10: TButton
+      Position.X = 297.000000000000000000
+      Position.Y = 32.000000000000000000
+      TabOrder = 9
+      Text = 'Button10'
+    end
+    object Button11: TButton
+      Position.X = 396.000000000000000000
+      Position.Y = 32.000000000000000000
+      TabOrder = 10
+      Text = 'Button11'
+    end
+    object Button12: TButton
+      Position.X = 495.000000000000000000
+      Position.Y = 32.000000000000000000
+      TabOrder = 11
+      Text = 'Button12'
+    end
+    object Button13: TButton
+      Position.X = 157.500000000000000000
+      Position.Y = 64.000000000000000000
+      TabOrder = 12
+      Text = 'Button13'
+    end
+    object Button14: TButton
+      Position.X = 247.500000000000000000
+      Position.Y = 64.000000000000000000
+      TabOrder = 13
+      Text = 'Button14'
+    end
+    object Button15: TButton
+      Position.X = 337.500000000000000000
+      Position.Y = 64.000000000000000000
+      TabOrder = 14
+      Text = 'Button15'
+    end
+  end
+end
