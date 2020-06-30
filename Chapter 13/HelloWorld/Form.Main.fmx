@@ -1,0 +1,34 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'HelloWorld3DProject'
+  Color = claSilver
+  ClientHeight = 600
+  ClientWidth = 1000
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Text3D1: TText3D
+    Width = 20.000000000000000000
+    Height = 3.000000000000000000
+    Depth = 0.300000011920929000
+    HitTest = False
+    VertTextAlign = Leading
+    Text = 'Hello, World!'
+    WordWrap = False
+    Flatness = 1.000000000000000000
+    Sides = [Front, Back, Shaft]
+    object FloatAnimation1: TFloatAnimation
+      AnimationType = InOut
+      AutoReverse = True
+      Enabled = True
+      Duration = 2.000000000000000000
+      Interpolation = Quartic
+      Loop = True
+      PropertyName = 'RotationAngle.Y'
+      StartValue = -45.000000000000000000
+      StopValue = 45.000000000000000000
+    end
+  end
+end
