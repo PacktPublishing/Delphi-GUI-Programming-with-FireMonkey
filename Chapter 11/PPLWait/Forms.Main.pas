@@ -21,8 +21,11 @@ type
     procedure ShootAndReportButtonClick(Sender: TObject);
     procedure FutureButtonClick(Sender: TObject);
     procedure JoinButtonClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
+    FFuture: IFuture<Integer>;
+
   public
     { Public declarations }
   end;
@@ -102,11 +105,9 @@ begin
   CodeSite.SendMsg('Join - end');
 end;
 
-procedure TForm1.FutureButtonClick(Sender: TObject);
-var
-  LFuture: IFuture<Integer>;
+procedure TForm1.FormCreate(Sender: TObject);
 begin
-  LFuture := TTask.Future<Integer>(
+  FFuture := TTask.Future<Integer>(
     function : Integer
     begin
       Sleep(5000);
@@ -114,7 +115,11 @@ begin
     end
   );
 
-  ShowMessage(LFuture.Value.ToString);
+end;
+
+procedure TForm1.FutureButtonClick(Sender: TObject);
+begin
+  ShowMessage(FFuture.Value.ToString);
 end;
 
 procedure TForm1.ShootAndReportButtonClick(Sender: TObject);
