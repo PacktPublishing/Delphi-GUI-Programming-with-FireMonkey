@@ -1,0 +1,32 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'HelloWorldProject'
+  ClientHeight = 480
+  ClientWidth = 346
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object ToolBar1: TToolBar
+    Size.Width = 346.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object TitleLabel: TLabel
+      Align = Contents
+      Size.Width = 346.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.HorzAlign = Center
+      Text = 'FMX App'
+      TabOrder = 0
+    end
+  end
+  object SayHelloWorldButton: TButton
+    Align = Center
+    TabOrder = 1
+    Text = 'Say it!'
+    OnClick = SayHelloWorldButtonClick
+  end
+end
