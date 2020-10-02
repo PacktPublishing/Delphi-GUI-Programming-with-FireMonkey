@@ -1,0 +1,63 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'CmdExecModeAsyncProject'
+  ClientHeight = 313
+  ClientWidth = 394
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object GetDataButton: TButton
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    TabOrder = 3
+    Text = 'Get Data'
+    OnClick = GetDataButtonClick
+  end
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    Position.X = 8.000000000000000000
+    Position.Y = 40.000000000000000000
+    Size.Width = 377.000000000000000000
+    Size.Height = 265.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Viewport.Width = 373.000000000000000000
+    Viewport.Height = 261.000000000000000000
+  end
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      'Database=employee'
+      'User_Name=SYSDBA'
+      'Password=masterkey'
+      'Protocol=TCPIP'
+      'Server=localhost'
+      'DriverID=FB')
+    Connected = True
+    LoginPrompt = False
+    Left = 56
+    Top = 88
+  end
+  object FDQuery1: TFDQuery
+    AfterOpen = FDQuery1AfterOpen
+    Connection = FDConnection1
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvCmdExecMode]
+    ResourceOptions.CmdExecMode = amAsync
+    SQL.Strings = (
+      'select E1.*, E2.*, E3.* from EMPLOYEE E1'
+      'left join EMPLOYEE E2 on E1.EMP_NO <> E2.EMP_NO'
+      'left join EMPLOYEE E3 on E2.EMP_NO <> E3.EMP_NO')
+    Left = 56
+    Top = 144
+  end
+  object FDPhysFBDriverLink1: TFDPhysFBDriverLink
+    Left = 160
+    Top = 88
+  end
+end
