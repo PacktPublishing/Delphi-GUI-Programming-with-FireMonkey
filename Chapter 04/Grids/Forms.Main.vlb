@@ -27,7 +27,7 @@ Coordinates=185,213,83,33
 Coordinates=454,10,53,105
 
 []
-Coordinates=121,1,69,33
+Coordinates=121,110,53,51
 
 [PrototypeBindSource1]
 Coordinates=249,10,125,105
@@ -47,9 +47,6 @@ Coordinates=10,10,92,177
 
 [StyleBook1]
 Coordinates=315,193,70,33
-
-[Button2]
-Coordinates=121,110,53,51
 
 [Column2]
 Coordinates=298,282,58,33

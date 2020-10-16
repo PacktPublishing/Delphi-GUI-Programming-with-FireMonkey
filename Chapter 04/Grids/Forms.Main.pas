@@ -33,7 +33,6 @@ type
     BindSourceDB1: TBindSourceDB;
     LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource;
     StyleBook1: TStyleBook;
-    Button2: TButton;
     Grid3: TGrid;
     Column2: TColumn;
     procedure FormCreate(Sender: TObject);
