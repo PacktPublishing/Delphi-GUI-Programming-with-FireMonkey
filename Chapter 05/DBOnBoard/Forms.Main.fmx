@@ -37,15 +37,14 @@ object Form1: TForm1
     TabOrder = 17
     RowCount = 4
     Viewport.Width = 361.000000000000000000
-    Viewport.Height = 215.000000000000000000
+    Viewport.Height = 199.000000000000000000
   end
   object EmployeesListView: TListView
     ItemAppearanceClassName = 'TListItemRightDetailAppearance'
     ItemEditAppearanceClassName = 'TListItemRightDetailDeleteAppearance'
     HeaderAppearanceClassName = 'TListHeaderObjects'
     FooterAppearanceClassName = 'TListHeaderObjects'
-    ItemIndex = 15
-    ScrollViewPos = 488.000000000000000000
+    ItemIndex = 0
     Align = MostLeft
     Size.Width = 169.000000000000000000
     Size.Height = 450.000000000000000000
@@ -55,7 +54,7 @@ object Form1: TForm1
   end
   object DataConnection: TFDConnection
     Params.Strings = (
-      'ConnectionDef=MAIN_DBx')
+      'ConnectionDef=EMPLOYEE_FB')
     Connected = True
     LoginPrompt = False
     BeforeConnect = DataConnectionBeforeConnect
@@ -124,7 +123,7 @@ object Form1: TForm1
     Left = 328
     Top = 88
     Content = {
-      414442530F001E28EA020000FF00010001FF02FF0304001C0000004F00720064
+      414442530F000000EA020000FF00010001FF02FF0304001C0000004F00720064
       006500720073004D0065006D005400610062006C00650005000A000000540061
       0062006C0065000600000000000700000800000000000900320000000A0000FF
       0BFF0C04000C00000045004D0050005F004E004F0005000C00000045004D0050

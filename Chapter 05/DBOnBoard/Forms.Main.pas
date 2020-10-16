@@ -17,7 +17,7 @@ uses
   System.Bindings.Outputs, Fmx.Bind.Editors, Data.Bind.Components,
   Data.Bind.Grid, Data.Bind.DBScope, FMX.Controls.Presentation, FMX.ScrollBox,
   FMX.Grid, FMX.ListView.Types, FMX.ListView.Appearances,
-  FMX.ListView.Adapters.Base, FMX.ListView;
+  FMX.ListView.Adapters.Base, FMX.ListView, FireDAC.Phys.SQLiteWrapper.Stat;
 
 type
   TForm1 = class(TForm)
@@ -60,8 +60,10 @@ uses IOUtils;
 procedure TForm1.DataConnectionBeforeConnect(Sender: TObject);
 begin
 {$IF DEFINED(iOS) or DEFINED(ANDROID)}
-  FDConnection1.Params.Values['Database'] := TPath.Combine(TPath.GetDocumentsPath, 'MyDataBase.sdb');
-  FDScript1.ExecuteAll
+  DataConnection.Params.Values['Database'] := TPath.Combine(TPath.GetDocumentsPath, 'MyDataBase.sdb');
+{$ENDIF}
+{$IF DEFINED(MSWINDOWS) or DEFINED(MACOS)}
+  DataConnection.Params.Values['Database'] := TPath.Combine(TPath.GetHomePath, 'MyDataBase.sdb');
 {$ENDIF}
 end;
 
