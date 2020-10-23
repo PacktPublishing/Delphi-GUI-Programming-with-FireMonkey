@@ -60,10 +60,20 @@ uses IOUtils;
 procedure TForm1.DataConnectionBeforeConnect(Sender: TObject);
 begin
 {$IF DEFINED(iOS) or DEFINED(ANDROID)}
-  DataConnection.Params.Values['Database'] := TPath.Combine(TPath.GetDocumentsPath, 'MyDataBase.sdb');
+  LocalSQLConnection.Params.Values['Database'] := TPath.Combine(TPath.GetDocumentsPath, 'MyDataBase.sdb');
 {$ENDIF}
 {$IF DEFINED(MSWINDOWS) or DEFINED(MACOS)}
-  DataConnection.Params.Values['Database'] := TPath.Combine(TPath.GetHomePath, 'MyDataBase.sdb');
+  {$IFDEF DEBUG}
+  LocalSQLConnection.Params.Values['Database'] := TPath.Combine(
+    ExtractFilePath(ExcludeTrailingPathDelimiter(ExtractFilePath(ParamStr(0)))) // parent folder of EXE
+  , 'MyDataBase.sdb'
+  );
+
+  ShowMessage(BoolToStr(TFile.Exists(LocalSQLConnection.Params.Values['Database']), True));
+
+  {$ELSE}
+  LocalSQLConnection.Params.Values['Database'] := TPath.Combine(TPath.GetHomePath, 'MyDataBase.sdb');
+  {$ENDIF}
 {$ENDIF}
 end;
 
