@@ -68,9 +68,6 @@ begin
     ExtractFilePath(ExcludeTrailingPathDelimiter(ExtractFilePath(ParamStr(0)))) // parent folder of EXE
   , 'MyDataBase.sdb'
   );
-
-  ShowMessage(BoolToStr(TFile.Exists(LocalSQLConnection.Params.Values['Database']), True));
-
   {$ELSE}
   LocalSQLConnection.Params.Values['Database'] := TPath.Combine(TPath.GetHomePath, 'MyDataBase.sdb');
   {$ENDIF}
