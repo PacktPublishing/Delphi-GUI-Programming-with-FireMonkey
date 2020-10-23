@@ -57,7 +57,6 @@ object Form1: TForm1
       'ConnectionDef=EMPLOYEE_FB')
     Connected = True
     LoginPrompt = False
-    BeforeConnect = DataConnectionBeforeConnect
     Left = 208
     Top = 32
   end
@@ -192,6 +191,7 @@ object Form1: TForm1
       'DriverID=SQLite')
     Connected = True
     LoginPrompt = False
+    BeforeConnect = LocalSQLConnectionBeforeConnect
     Left = 456
     Top = 32
   end

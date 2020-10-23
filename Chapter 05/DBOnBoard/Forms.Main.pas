@@ -41,7 +41,7 @@ type
     EmployeesListView: TListView;
     BSEmployeeQuery: TBindSourceDB;
     LinkListControlToField2: TLinkListControlToField;
-    procedure DataConnectionBeforeConnect(Sender: TObject);
+    procedure LocalSQLConnectionBeforeConnect(Sender: TObject);
   private
     { Private declarations }
   public
@@ -57,7 +57,7 @@ implementation
 
 uses IOUtils;
 
-procedure TForm1.DataConnectionBeforeConnect(Sender: TObject);
+procedure TForm1.LocalSQLConnectionBeforeConnect(Sender: TObject);
 begin
 {$IF DEFINED(iOS) or DEFINED(ANDROID)}
   LocalSQLConnection.Params.Values['Database'] := TPath.Combine(TPath.GetDocumentsPath, 'MyDataBase.sdb');
