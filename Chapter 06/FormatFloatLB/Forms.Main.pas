@@ -8,9 +8,11 @@ uses
   Data.Bind.GenData, Data.Bind.EngExt, Fmx.Bind.DBEngExt, System.Rtti,
   System.Bindings.Outputs, Fmx.Bind.Editors, Data.Bind.Components,
   FMX.Controls.Presentation, FMX.StdCtrls, Data.Bind.ObjectScope,
-  Data.Bind.Controls, FMX.Layouts, Fmx.Bind.Navigator, Methods.FormatFloat,
+  Data.Bind.Controls, FMX.Layouts, Fmx.Bind.Navigator,
   FMX.ListView.Types, FMX.ListView.Appearances, FMX.ListView.Adapters.Base,
-  FMX.ListView;
+  FMX.ListView,
+  Methods.FormatFloat // important to register the FormatFloat LB method at runtime
+;
 
 type
   TForm1 = class(TForm)

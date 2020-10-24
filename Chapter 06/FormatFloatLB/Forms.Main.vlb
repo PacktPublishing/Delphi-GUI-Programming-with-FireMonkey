@@ -1,14 +1,14 @@
 ﻿[PrototypeBindSource1]
-Coordinates=230,30,125,105
+Coordinates=197,71,143,112
 
 []
 Coordinates=0,0,89,195
 Visible=True
 
 [BindingsList1]
-Coordinates=114,152,82,33
+Coordinates=114,152,91,36
 
 [ListView1]
-Coordinates=0,0,89,195
+Coordinates=10,10,107,234
 Visible=True
 
