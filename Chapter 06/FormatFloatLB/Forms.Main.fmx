@@ -23,8 +23,7 @@ object Form1: TForm1
       item
         AppearanceObjectName = 'Text1'
         AppearanceClassName = 'TTextObjectAppearance'
-        Appearance.Width = 300.000000000000000000
-        Appearance.Height = 10.000000000000000000
+        Appearance.Width = 100.000000000000000000
       end
       item
         AppearanceObjectName = 'Text2'
@@ -72,7 +71,7 @@ object Form1: TForm1
         item
           SourceMemberName = 'FloatField1'
           ControlMemberName = 'Text1'
-          CustomFormat = 'Self.Owner.Owner.Owner.ClassName()'
+          CustomFormat = 'FormatFloat('#39'#,#0.0000'#39', Value)'
         end
         item
           SourceMemberName = 'FloatField1'

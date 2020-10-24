@@ -24,6 +24,7 @@ type
     { Private declarations }
   public
     { Public declarations }
+    // Self.Owner.Owner.Owner.FormFormatFloat()
     function FormFormatFloat(const AFormat: string; const AValue: Extended; const ALocale: string): string;
   end;
 
