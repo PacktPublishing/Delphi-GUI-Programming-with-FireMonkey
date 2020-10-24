@@ -4,14 +4,13 @@
         <ProjectFileVersion>12</ProjectFileVersion>
     </ProjectExtensions>
     <PropertyGroup>
-        <DeviceId Condition="'$(Platform)'=='Android'">01cace91dbe53a17</DeviceId>
-        <DeviceId Condition="'$(Platform)'=='iOSDevice32'"/>
-        <DeviceId Condition="'$(Platform)'=='iOSDevice64'"/>
+        <DeviceId Condition="'$(Platform)'=='Android'"/>
+        <DeviceId Condition="'$(Platform)'=='Android64'"/>
+        <DeviceId Condition="'$(Platform)'=='iOSDevice64'">59efc9dae4220c31f03be814f1c5abbb45ee2b41</DeviceId>
         <DeviceId Condition="'$(Platform)'=='iOSSimulator'">iPhone5</DeviceId>
     </PropertyGroup>
     <ItemGroup Condition="'$(Platform)'=='iOSDevice64'"/>
     <ItemGroup Condition="'$(Platform)'=='Win64'"/>
-    <ItemGroup Condition="'$(Platform)'=='iOSDevice32'"/>
     <ItemGroup Condition="'$(Platform)'=='Win32'">
         <DeployFile Include="Win32\Debug\ClipboardProject.exe" Condition="'$(Config)'=='Debug'">
             <RemoteDir>ClipboardProject\</RemoteDir>
@@ -25,35 +24,7 @@
         </DeployFile>
     </ItemGroup>
     <ItemGroup Condition="'$(Platform)'=='Linux64'"/>
-    <ItemGroup Condition="'$(Platform)'=='OSX32'">
-        <DeployFile Include="OSX32\Debug\ClipboardProject.info.plist" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>ClipboardProject.app\Contents\</RemoteDir>
-            <RemoteName>Info.plist</RemoteName>
-            <DeployClass>ProjectOSXInfoPList</DeployClass>
-            <Operation>1</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="OSX32\Debug\ClipboardProject.rsm" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>ClipboardProject.app\Contents\MacOS\</RemoteDir>
-            <RemoteName>ClipboardProject.rsm</RemoteName>
-            <DeployClass>DebugSymbols</DeployClass>
-            <Operation>1</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="OSX32\Debug\ClipboardProject" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>ClipboardProject.app\Contents\MacOS\</RemoteDir>
-            <RemoteName>ClipboardProject</RemoteName>
-            <DeployClass>ProjectOutput</DeployClass>
-            <Operation>1</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-            <Required>True</Required>
-        </DeployFile>
+    <ItemGroup Condition="'$(Platform)'=='OSX64'">
         <DeployFile Include="$(BDS)\bin\delphi_PROJECTICNS.icns" Condition="'$(Config)'=='Debug'">
             <RemoteDir>ClipboardProject.app\Contents\Resources\</RemoteDir>
             <RemoteName>ClipboardProject.icns</RemoteName>
@@ -63,7 +34,7 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="OSX32\Debug\ClipboardProject.entitlements" Condition="'$(Config)'=='Debug'">
+        <DeployFile Include="OSX64\Debug\ClipboardProject.entitlements" Condition="'$(Config)'=='Debug'">
             <RemoteDir>ClipboardProject.app\..\</RemoteDir>
             <RemoteName>ClipboardProject.entitlements</RemoteName>
             <DeployClass>ProjectOSXEntitlements</DeployClass>
@@ -72,14 +43,33 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="$(BDS)\Redist\osx32\libcgunwind.1.0.dylib">
-            <RemoteDir>ClipboardProject.app\Contents\MacOS\</RemoteDir>
-            <RemoteName>libcgunwind.1.0.dylib</RemoteName>
-            <DeployClass>DependencyModule</DeployClass>
+        <DeployFile Include="OSX64\Debug\ClipboardProject.dSYM" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ClipboardProject.app\..\$(PROJECTNAME).app.dSYM\Contents\Resources\DWARF\</RemoteDir>
+            <RemoteName>ClipboardProject</RemoteName>
+            <DeployClass>ProjectOSXDebug</DeployClass>
             <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="OSX64\Debug\ClipboardProject.info.plist" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ClipboardProject.app\Contents\</RemoteDir>
+            <RemoteName>Info.plist</RemoteName>
+            <DeployClass>ProjectOSXInfoPList</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="OSX64\Debug\ClipboardProject" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ClipboardProject.app\Contents\MacOS\</RemoteDir>
+            <RemoteName>ClipboardProject</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
         </DeployFile>
     </ItemGroup>
     <ItemGroup Condition="'$(Platform)'=='Android'">
@@ -310,7 +300,6 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
     </ItemGroup>
-    <ItemGroup Condition="'$(Platform)'=='OSX64'"/>
     <ItemGroup Condition="'$(Platform)'=='iOSSimulator'">
         <DeployFile Include="$(BDS)\Redist\iossimulator\libcgunwind.1.0.dylib">
             <RemoteDir>ClipboardProject.app\</RemoteDir>
@@ -331,4 +320,5 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
     </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='Android64'"/>
 </Project>

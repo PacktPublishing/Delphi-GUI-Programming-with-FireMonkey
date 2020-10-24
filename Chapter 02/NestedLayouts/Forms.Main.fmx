@@ -2,8 +2,8 @@ object Form1: TForm1
   Left = 0
   Top = 0
   Caption = 'Form1'
-  ClientHeight = 400
-  ClientWidth = 400
+  ClientHeight = 490
+  ClientWidth = 513
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
@@ -14,15 +14,15 @@ object Form1: TForm1
     Margins.Top = 10.000000000000000000
     Margins.Right = 10.000000000000000000
     Margins.Bottom = 10.000000000000000000
-    Size.Width = 380.000000000000000000
-    Size.Height = 332.000000000000000000
+    Size.Width = 493.000000000000000000
+    Size.Height = 422.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 0
     object Layout2: TLayout
       Align = MostRight
-      Position.X = 330.000000000000000000
+      Position.X = 443.000000000000000000
       Size.Width = 50.000000000000000000
-      Size.Height = 332.000000000000000000
+      Size.Height = 422.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 0
       object Label3: TLabel
@@ -41,8 +41,8 @@ object Form1: TForm1
     end
     object Layout3: TLayout
       Align = Bottom
-      Position.Y = 282.000000000000000000
-      Size.Width = 330.000000000000000000
+      Position.Y = 372.000000000000000000
+      Size.Width = 443.000000000000000000
       Size.Height = 50.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 2
@@ -52,7 +52,7 @@ object Form1: TForm1
         Margins.Left = 3.000000000000000000
         Margins.Right = 3.000000000000000000
         Position.X = 3.000000000000000000
-        Size.Width = 324.000000000000000000
+        Size.Width = 437.000000000000000000
         Size.Height = 23.000000000000000000
         Size.PlatformDefault = False
         TextSettings.FontColor = claGray
@@ -62,16 +62,16 @@ object Form1: TForm1
     end
     object Layout4: TLayout
       Align = Scale
-      Position.X = 65.000045776367190000
-      Position.Y = 41.000022888183590000
-      Size.Width = 199.999832153320300000
-      Size.Height = 199.999877929687500000
+      Position.X = 84.329032897949220000
+      Position.Y = 52.114524841308590000
+      Size.Width = 259.473602294921900000
+      Size.Height = 254.216796875000000000
       Size.PlatformDefault = False
       TabOrder = 3
       object Layout5: TLayout
         Align = VertCenter
-        Position.Y = 86.000000000000000000
-        Size.Width = 199.999832153320300000
+        Position.Y = 113.000000000000000000
+        Size.Width = 259.473602294921900000
         Size.Height = 50.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
@@ -81,7 +81,7 @@ object Form1: TForm1
           Margins.Left = 3.000000000000000000
           Margins.Right = 3.000000000000000000
           Position.X = 3.000000000000000000
-          Size.Width = 193.999832153320300000
+          Size.Width = 253.473602294921900000
           Size.Height = 23.000000000000000000
           Size.PlatformDefault = False
           TextSettings.FontColor = claGray
@@ -95,7 +95,7 @@ object Form1: TForm1
         Margins.Left = 3.000000000000000000
         Margins.Right = 3.000000000000000000
         Position.X = 3.000000000000000000
-        Size.Width = 193.999832153320300000
+        Size.Width = 253.473602294921900000
         Size.Height = 23.000000000000000000
         Size.PlatformDefault = False
         TextSettings.FontColor = claGray
@@ -109,7 +109,7 @@ object Form1: TForm1
       Margins.Left = 3.000000000000000000
       Margins.Right = 3.000000000000000000
       Position.X = 3.000000000000000000
-      Size.Width = 324.000000000000000000
+      Size.Width = 437.000000000000000000
       Size.Height = 23.000000000000000000
       Size.PlatformDefault = False
       TextSettings.FontColor = claGray
@@ -118,7 +118,7 @@ object Form1: TForm1
     end
   end
   object ToolBar1: TToolBar
-    Size.Width = 400.000000000000000000
+    Size.Width = 513.000000000000000000
     Size.Height = 48.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 1
