@@ -1,5 +1,8 @@
 program Project1;
 
+
+
+{$R 'Project1Resource.res' 'Project1Resource.rc'}
 {$R *.dres}
 
 uses
@@ -12,7 +15,7 @@ uses
 {$R *.res}
 
 begin
-  TStyleManager.SetStyleFromFile('C:\Users\Public\Documents\Embarcadero\Studio\20.0\Styles\Win\CoralCrystal.Win.Style');
+  TStyleManager.SetStyleFromFile('C:\Users\Public\Documents\Embarcadero\Studio\21.0\Styles\Win\CoralCrystal.Win.Style');
   Application.Initialize;
   Application.CreateForm(TForm1, Form1);
   Application.CreateForm(TForm2, Form2);

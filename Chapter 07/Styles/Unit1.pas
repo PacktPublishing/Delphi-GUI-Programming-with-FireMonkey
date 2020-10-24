@@ -36,6 +36,12 @@ type
 var
   Form1: TForm1;
 
+// BEWARE: you can install CoralCrystal and CopperDark FMX styles from Embarcadero GetIt
+// the project also relies on Jet FMX style as it is included in the project's resources
+// to showcase runtime loading of styles from resources.
+// Also check paths of loaded file resources are correct (according to Delphi version,
+// for example) and also check the DPR file as there is a TStyleManager call there.
+
 implementation
 
 {$R *.fmx}
@@ -53,7 +59,7 @@ end;
 
 procedure TForm1.Button2Click(Sender: TObject);
 begin
-  TStyleManager.SetStyleFromFile('C:\Users\Public\Documents\Embarcadero\Studio\20.0\Styles\Win\CoralCrystal.Win.Style');
+  TStyleManager.SetStyleFromFile('C:\Users\Public\Documents\Embarcadero\Studio\21.0\Styles\Win\CoralCrystal.Win.Style');
 end;
 
 procedure TForm1.Button3Click(Sender: TObject);
@@ -73,6 +79,7 @@ procedure TForm1.Button5Click(Sender: TObject);
 var
   LFileStream: TFileStream;
 begin
+  ForceDirectories('c:\temp\');
   LFileStream := TFileStream.Create('C:\temp\win10.stylebin', fmCreate or fmOpenReadWrite);
   try
     TStyleStreaming.SaveToStream(
@@ -85,7 +92,7 @@ end;
 
 procedure TForm1.FormCreate(Sender: TObject);
 begin
-//  TStyleStreaming.LoadFromResource(HInstance, 'MYSTYLE', 'RCDATA');
+//  TStyleStreaming.LoadFromResource(HInstance, 'MYSTYLE', RT_RCDATA);
 end;
 
 end.
