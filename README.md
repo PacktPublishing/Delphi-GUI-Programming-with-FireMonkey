@@ -58,3 +58,7 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 
 ## Get to Know the Author
 **Andrea Magni** is an Italian computer engineer (with a degree in artificial intelligence and robotics from the Polytechnic of Milan, 2007) living near Monza. He is a freelancer who has gained 2 decades of experience in the industry as a software developer and consultant. He has trained many development teams to design software architectures and models, acquire knowledge, introduce source and project management tools, and perform troubleshooting. He has been an Embarcadero MVP since 2014 and he runs a technical blog and some OSS projects on GitHub. He regularly takes part in major Delphi conferences, such as EKON and DCC (DE), Embarcadero DelphiCon, PasCon, SDN (NL), Be-Delphi (BE), DAPUG (DK), ITDevCon (IT), DelphiDay (IT, until 2015), DelphiDay (PL), and other events.
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781788624176">https://packt.link/free-ebook/9781788624176 </a> </p>
